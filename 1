@@ -1,0 +1,2804 @@
+<?php
+//color
+$thoigian= date('H:i:s');
+$res="\033[0m";
+$res="\033[0m";
+$red="\033[1;31m";
+$green="\033[1;32m";
+$yellow="\033[1;33m";
+$white= "\033[1;37m";
+$syan="\033[1;36m";
+$blue="\033[1;94m";
+$tim="\033[0;95m";
+$khiem=" \033[1;97m ~\033[1;91m[\033[1;92mâœ“\033[1;91m] \033[1;97m=> ";
+$banner="\r";
+$checkkey  = file('https://syneld.000webhostapp.com/keysyneld');
+$lock=file_get_contents('https://syneld.000webhostapp.com/locksyneld');
+$keylock=md5(htmlspecialchars($lock));
+echo $res;
+if (md5('lock') != $keylock) {
+	echo $red."\033[1;35m[\033[1;33mSTATUS\033[1;35m]\n".$red;
+	echo $red."         ðŸ”°\033[1;31mSEVER Táº M NGá»ªNG HOáº T Äá»˜NGðŸ”°\n".$red;
+	echo $syan."\033[1;34m[\033[1;36mZalo\033[1;34m]â‡’ \033[1;32m0917.923.219\n".$red;
+	echo $syan."\033[1;34m[\033[1;36mFacebook\033[1;34m]â‡’ \033[1;33mhttps://www.facebook.com/profile.php?id=100081910131655\n".$red;
+exit($red."Vui LÃ²ng LiÃªn Há»‡ \033[1;35mAdmin \033[1;31mÄá»ƒ Láº¥y Tool Má»›i NhÃ© !!\n".$red);
+}
+system('clear'); 
+while (true) {
+ echo "\n";
+ echo "  \033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—     â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—";
+ echo "\n";
+ echo "  \033[1;37mâ–ˆâ–ˆâ•”â•â•â•â•â•â•šâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•”â•â–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•â•â•â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—";
+ echo "\n";
+ echo "  \033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•”â• â–ˆâ–ˆâ•”â–ˆâ–ˆâ•— â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘";
+ echo "\n";
+ echo "  \033[1;37mâ•šâ•â•â•â•â–ˆâ–ˆâ•‘  â•šâ–ˆâ–ˆâ•”â•  â–ˆâ–ˆâ•‘â•šâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•  â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘";
+ echo "\n";
+ echo "  \033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘ â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•";
+ echo "\n";
+ echo "  \033[1;37mâ•šâ•â•â•â•â•â•â•   â•šâ•â•   â•šâ•â•  â•šâ•â•â•â•â•šâ•â•â•â•â•â•â•â•šâ•â•â•â•â•â•â•â•šâ•â•â•â•â•â•";
+ echo "\n";
+ echo "        â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•";
+ echo "\n";
+ echo "\033[1;32mâ•”â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•—";
+ echo "\n";
+ echo "â•‘                                                     â•‘";
+ echo "\n";
+ echo "\033[1;32mâ•‘      Note : CÃ³ Tool MÃ  Ko CÃ³ Key CÅ©ng Váº­y Ã€         â•‘";
+ echo "\n";
+ echo "â•‘        Mua Key LiÃªn Há»‡ : Phan Äá»©c (Syneld)          â•‘";
+ echo "\n";
+ echo "â•‘                                                     â•‘";
+ echo "\n";
+ echo "\033[1;32mâ•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•";
+ echo "\n";
+ echo "\n";
+ echo "\033[1;97m \033[1;91m[\033[1;92mApi\033[1;94m@\033[1;92mKeyï¸\033[1;91m] \033[1;97m=> \033[1;93m";
+      $makey = trim(fgets(STDIN));
+    if ($makey == $checkkey[0]) 
+   
+    {
+    sleep(2);
+        echo "\033[1;32";
+        echo "\n";
+        break;
+    } else {
+        echo "\033[1;31mKey Sai Vui LÃ²ng LiÃªn Há»‡ \033[1;34mAdmin\033[1;31mÄá»ƒ Láº¥y Key Má»›i";
+        echo "\n";
+    }
+}
+system('clear');
+
+
+error_reporting(0);
+session_start();
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+/***[ Color ]***/
+$xnhac = "\033[1;36m";
+$do = "\033[1;31m";
+$luc = "\033[1;32m";
+$vang = "\033[1;33m";
+$xduong = "\033[1;34m";
+$hong = "\033[1;35m";
+$trang = "\033[1;37m";
+
+
+$_SESSION["C_LIKE"]   = " LIKE ";
+$_SESSION["C_LIKE2"]  = "LIKE 2";
+$_SESSION["C_LIKE3"]  = "LIKE 3";
+$_SESSION["C_CMT"]    = " CMT  ";
+$_SESSION["C_FOLLOW"] = "FOLLOW";
+$_SESSION["C_SHARE"]  = "SHARE ";
+$_SESSION["C_PAGE"]   = " PAGE ";
+$_SESSION["C_CXCMT"]  = "CX CMT";
+$_SESSION["C_LOVE"]   = " LOVE ";
+$_SESSION["C_CARE"]   = " CARE ";
+$_SESSION["C_HAHA"]   = " HAHA ";
+$_SESSION["C_WOW"]    = " WOW  ";
+$_SESSION["C_SAD"]    = " SAD  ";
+$_SESSION["C_ANGRY"]  = "ANGRY ";
+$_SESSION["C_GROUP"]  = "GROUP ";
+
+
+
+
+$thanh_xau = "\033[1;31m [\033[1;37mâœ…\033[1;31m]\033[1;37m => \033[1;32m";
+$thanh_dep = "\033[1;31m [\033[1;37mâœ…\033[1;31m]\033[1;37m => \033[1;32m";
+$thanhngang = "\033[1;32mâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n";
+$thanhngang1 = "\033[1;32mâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n";
+$daucau = "\n\033[1;31m [\033[1;37mâœ…\033[1;31m] \033[1;37m";
+$daucauc = "\033[1;31m [\033[1;37mâœ…\033[1;31m]\033[1;37m => \033[1;32m";
+/***[ Config ]***/
+$_SESSION['version'] = "2.0";
+system('clear');
+$logo= "\033[1;37m             
+\033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—     â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—
+\033[1;37mâ–ˆâ–ˆâ•”â•â•â•â•â•â•šâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•”â•â–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•â•â•â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—
+\033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•”â• â–ˆâ–ˆâ•”â–ˆâ–ˆâ•— â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘
+\033[1;37mâ•šâ•â•â•â•â–ˆâ–ˆâ•‘  â•šâ–ˆâ–ˆâ•”â•  â–ˆâ–ˆâ•‘â•šâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•  â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘
+\033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘ â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•
+\033[1;37mâ•šâ•â•â•â•â•â•â•   â•šâ•â•   â•šâ•â•  â•šâ•â•â•â•â•šâ•â•â•â•â•â•â•â•šâ•â•â•â•â•â•â•â•šâ•â•â•â•â•â•
+\n";           
+$logo = logo_kov();
+
+
+$useragent = "Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36";
+
+
+
+$codeao = 'var m;function aa(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}var ba="function"==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};
+function ca(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var da=ca(this);function ha(a,b){if(b)a:{var c=da;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&null!=b&&ba(c,a,{configurable:!0,writable:!0,value:b})}}
+ha("Symbol",function(a){function b(f){if(this instanceof b)throw new TypeError("Symbol is not a constructor");return new c(d+(f||"")+"_"+e++,f)}function c(f,g){this.Hd=f;ba(this,"description",{configurable:!0,writable:!0,value:g})}if(a)return a;c.prototype.toString=function(){return this.Hd};var d="jscomp_symbol_"+(1E9*Math.random()>>>0)+"_",e=0;return b});
+ha("Symbol.iterator",function(a){if(a)return a;a=Symbol("Symbol.iterator");for(var b="Array Int8Array Uint8Array Uint8ClampedArray Int16Array Uint16Array Int32Array Uint32Array Float32Array Float64Array".split(" "),c=0;c<b.length;c++){var d=da[b[c]];"function"===typeof d&&"function"!=typeof d.prototype[a]&&ba(d.prototype,a,{configurable:!0,writable:!0,value:function(){return ja(aa(this))}})}return a});function ja(a){a={next:a};a[Symbol.iterator]=function(){return this};return a}
+function n(a){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return b?b.call(a):{next:aa(a)}}var ka="function"==typeof Object.create?Object.create:function(a){function b(){}b.prototype=a;return new b},la;if("function"==typeof Object.setPrototypeOf)la=Object.setPrototypeOf;else{var ma;a:{var oa={a:!0},pa={};try{pa.__proto__=oa;ma=pa.a;break a}catch(a){}ma=!1}la=ma?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}
+var ra=la;function sa(a,b){a.prototype=ka(b.prototype);a.prototype.constructor=a;if(ra)ra(a,b);else for(var c in b)if("prototype"!=c)if(Object.defineProperties){var d=Object.getOwnPropertyDescriptor(b,c);d&&Object.defineProperty(a,c,d)}else a[c]=b[c];a.Af=b.prototype}
+ha("Promise",function(a){function b(g){this.B=0;this.Na=void 0;this.ua=[];this.ld=!1;var h=this.Wb();try{g(h.resolve,h.reject)}catch(k){h.reject(k)}}function c(){this.T=null}function d(g){return g instanceof b?g:new b(function(h){h(g)})}if(a)return a;c.prototype.Xc=function(g){if(null==this.T){this.T=[];var h=this;this.Yc(function(){h.ze()})}this.T.push(g)};var e=da.setTimeout;c.prototype.Yc=function(g){e(g,0)};c.prototype.ze=function(){for(;this.T&&this.T.length;){var g=this.T;this.T=[];for(var h=
+0;h<g.length;++h){var k=g[h];g[h]=null;try{k()}catch(l){this.Vd(l)}}}this.T=null};c.prototype.Vd=function(g){this.Yc(function(){throw g;})};b.prototype.Wb=function(){function g(l){return function(q){k||(k=!0,l.call(h,q))}}var h=this,k=!1;return{resolve:g(this.kf),reject:g(this.Fc)}};b.prototype.kf=function(g){if(g===this)this.Fc(new TypeError("A Promise cannot resolve to itself"));else if(g instanceof b)this.uf(g);else{a:switch(typeof g){case "object":var h=null!=g;break a;case "function":h=!0;break a;';
+
+
+
+
+
+
+
+
+$daucau2 = "\033[1;31m [\033[1;37mâœ…\033[1;31m] \033[1;37m";
+system('clear');
+$logo= "\033[1;37m             
+\033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—     â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—
+\033[1;37mâ–ˆâ–ˆâ•”â•â•â•â•â•â•šâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•”â•â–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•â•â•â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—
+\033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•”â• â–ˆâ–ˆâ•”â–ˆâ–ˆâ•— â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘
+\033[1;37mâ•šâ•â•â•â•â–ˆâ–ˆâ•‘  â•šâ–ˆâ–ˆâ•”â•  â–ˆâ–ˆâ•‘â•šâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•  â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘
+\033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘ â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•
+\033[1;37mâ•šâ•â•â•â•â•â•â•   â•šâ•â•   â•šâ•â•  â•šâ•â•â•â•â•šâ•â•â•â•â•â•â•â•šâ•â•â•â•â•â•â•â•šâ•â•â•â•â•â•
+\n";           
+
+$listnv = [];
+
+$namefile = 'TKMKTDS.txt';
+if (file_exists($namefile) != true) {
+} else {
+    $data = fread(fopen($namefile, "r"), filesize($namefile));
+    $usertds = explode('|', $data)[0];
+}
+if ($usertds == '') {
+    $phanxu = "n";
+    print "\033[1;32m ÄÄ‚NG NHáº¬P TÃ€I KHOáº¢N TDS\n";
+} else {
+    echo $logo;
+print "\033[1;32m Báº¡n Muá»‘n ÄÄƒng Nháº­p Láº¡i TÃ i khoáº£n \033[1;33m$usertds\033[1;32m KhÃ´ng ? (y/n) : \033[1;33m";
+    $phanxu = trim(fgets(STDIN));
+}
+if ($phanxu == "n" or $phanxu == "N") {
+    unlink($namefile);
+}
+if (file_exists($namefile) != true) {
+    echo $thanhngang1;
+    print "$daucau2 \033[1;32mTÃ i Khoáº£n TDS : \033[1;35m";
+    $username = trim(fgets(STDIN));
+    print "$daucau2 \033[1;32mMáº­t Kháº©u TDS : \033[1;35m";
+    $password = trim(fgets(STDIN));
+    $file = fopen($namefile, "w");
+    fwrite($file, '' . $username . '|' . $password . '');
+    fclose($file);
+}
+$data   = fread(fopen($namefile, "r"), filesize($namefile));
+$username = explode('|', $data)[0];
+$password = explode('|', $data)[1];
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, 'https://traodoisub.com/scr/login.php');
+curl_setopt($ch, CURLOPT_COOKIEJAR, "TDS.txt");
+curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Linux; Android 10; SM-J600G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36');
+$login = array('username' => $username, 'password' => $password, 'submit' => ' ÄÄƒng Nháº­p');
+curl_setopt($ch, CURLOPT_POST, count($login));
+curl_setopt($ch, CURLOPT_POSTFIELDS, $login);
+curl_setopt($ch, CURLOPT_COOKIEFILE, "TDS.txt");
+$source = curl_exec($ch);
+curl_close($ch);
+if ($source != 1 && $source != '') {
+    echo $thanhngang1;
+    print "$daucau2\033[1;92m ÄÄƒng Nháº­p ThÃ nh CÃ´ng TÃªn TÃ i Khoáº£n TDS : \033[1;93m" . $username . "\n";
+} else {
+    exit("$daucau2\033[1;91m ÄÄƒng nháº­p tháº¥t báº¡i, kiá»ƒm tra láº¡i tÃ i khoáº£n máº­t kháº©u!");
+}
+echo $thanhngang1;
+//print "$daucau2 \033[1;32mNháº­p Cookie Facebook : \033[1;35m";
+$khoToken = [];
+
+
+if (file_exists("File_cookie_FB.txt")) {
+    echo $do . "[" . $trang . "1" . $do . "]" . $xnhac . " ThÃªm Cookie Má»›i Facebook Äá»ƒ Cháº¡y\n";
+    echo $do . "[" . $trang . "2" . $do . "]" . $xnhac . " Cháº¡y Cookie Facebook CÅ©\n";
+    echo  $luc . "Nháº­p" . $trang . " 1 " . $luc . "Hoáº·c" . $trang . " 2 " . $luc . ": $vang ";
+    $choice = trim(fgets(STDIN));
+    if ($choice == '1') {
+        unlink("File_cookie_FB.txt");
+    }
+}
+
+if (!file_exists("File_cookie_FB.txt")) {
+    echo "\n\033[1;31m [\033[1;37mâœ…\033[1;31m]\033[1;37m => \033[1;32mNháº­p Cookie FB muá»‘n dá»«ng áº¥n Enter\033[1;33m \n";
+    unlink("File_cookie_FB.txt");
+    for ($a = 1; $a < 999999; $a++) {
+        echo "\033[1;31m [\033[1;37mâœ…\033[1;31m]\033[1;37m => \033[1;32mNháº­p Cookie Thá»© $a: $vang";
+        $nhapck = (string)trim(fgets(STDIN));
+        if ($nhapck == '') {
+            break;
+        }
+        array_push($khoToken, $nhapck);
+    }
+    $js = json_encode($khoToken);
+    $k = fopen("File_cookie_FB.txt", "a+");
+    fwrite($k, $js);
+    fclose($k);
+    $demcki = count($khoToken);
+}
+
+
+$khoToken = json_decode(fread(fopen("File_cookie_FB.txt", "r"), filesize("File_cookie_FB.txt")), true);
+$demcki = count($khoToken);
+
+
+/*
+$cookie = trim(fgets(STDIN));
+
+$access_token = lay_token_moi($cookie);
+if ($access_token != "EAAG") {
+    $idfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token='.$access_token))->{'id'};
+    $tenfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token='.$access_token))->{'name'};
+
+echo $thanhngang1;
+usleep(10000);
+print "$daucau2 \033[1;92m TÃŠN FB : \033[1;93m".$tenfb."\033[1;97m âžœ \033[1;92mStatus : \033[1;93mLIVE\n";
+echo $thanhngang1;
+sleep(1.5);
+} else {
+print "$daucau2 \033[1;92mCookie KhÃ´ng Hoáº¡t Äá»™ng Hoáº·c Vui LÃ²ng KhÃ´ng DÃ¹ng Acc TÃ¢y!!!\n";exit;
+}
+$d = datnick($idfb);
+if ($d == 1) 
+{ 
+	system('clear');
+
+    echo $logo;
+    echo $thanhngang;
+
+print "$daucau2 \033[1;92mÄÃ£ Äáº·t ID \033[1;93m".$idfb."\033[1;92m FB \033[1;93m".$tenfb."\033[1;92m LÃ m Nick Cháº¡y!!\n";
+echo $thanhngang1;
+} else {
+print "$daucau2 \033[1;92mCáº¥u HÃ¬nh Tháº¥t Báº¡i,Vui LÃ²ng ThÃªm ID \033[1;93m".$idfb."\033[1;92m LÃ m Cáº¥u HÃ¬nh TDS .\n"; die;
+}
+*/
+system('clear');
+
+echo $logo;
+echo $thanhngang;
+
+if (!file_exists('Setting_TDS_Cookie.txt')) {
+    $settings = json_encode(['delaygr' => '23', 'delaylike' => '6', 'delayfollow' => '20', 'delaycmt' => '15', 'delaypage' => '20', 'delayshare' => '35', 'delaycx' => '5', 'delaycxcmt' => '5', 'nhiemvu' => '120', 'block' => '200']);
+    file_put_contents('Setting_TDS_Cookie.txt', $settings);
+}
+if (file_exists('Setting_TDS_Cookie.txt')) {
+    $json = json_decode(file_get_contents('Setting_TDS_Cookie.txt'), true);
+    $a = "$daucau2 \033[1;92mDelay LikePost Hiá»‡n Táº¡i LÃ  \033[1;93m" . $json["delaylike"] . "\033[1;92m GiÃ¢y
+$daucau2 \033[1;92mDelay Follow Hiá»‡n Táº¡i LÃ  \033[1;93m" . $json["delayfollow"] . "\033[1;92m GiÃ¢y
+$daucau2 \033[1;92mDelay Comment Hiá»‡n Táº¡i LÃ  \033[1;93m" . $json["delaycmt"] . "\033[1;92m GiÃ¢y
+$daucau2 \033[1;92mDelay Page Hiá»‡n Táº¡i LÃ  \033[1;93m" . $json["delaypage"] . "\033[1;92m GiÃ¢y
+$daucau2 \033[1;92mDelay SharePost Hiá»‡n Táº¡i LÃ  \033[1;93m" . $json["delayshare"] . "\033[1;92m GiÃ¢y
+$daucau2 \033[1;92mDelay Cáº£m XÃºc Hiá»‡n Táº¡i LÃ  \033[1;93m" . $json["delaycx"] . "\033[1;92m GiÃ¢y
+$daucau2 \033[1;92mDelay Cáº£m XÃºc Cmt Hiá»‡n Táº¡i LÃ  \033[1;93m" . $json["delaycxcmt"] . "\033[1;92m GiÃ¢y
+$daucau2 \033[1;92mDelay Group Hiá»‡n Táº¡i LÃ  \033[1;93m" . $json["delaygr"] . "\033[1;92m GiÃ¢y
+\033[1;32m â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+$daucau2 \033[1;92mKÃ­ch Hoáº¡t Chá»‘ng Block Sau \033[1;93m" . $json["nhiemvu"] . "\033[1;92m Nhiá»‡m Vá»¥
+$daucau2 \033[1;92mDelay Chá»‘ng Block Hiá»‡n Táº¡i LÃ  \033[1;93m" . $json["block"] . "\033[1;92m GiÃ¢y
+\033[1;32m â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+$daucau2 \033[1;92mNháº­p \033[1;91m[\033[1;93m1\033[1;91m] \033[1;92mTiáº¿p Tá»¥c Sá»­ Dá»¥ng Settings_Delay NÃ y!
+$daucau2 \033[1;92mNháº­p \033[1;91m[\033[1;93m2\033[1;91m] \033[1;92mSá»­ Dá»¥ng Delay ÄÆ°á»£c Äá» Xuáº¥t Bá»Ÿi Tool!
+$daucau2 \033[1;92mNháº­p \033[1;91m[\033[1;93m3\033[1;91m] \033[1;92mXoÃ¡ Delay NÃ y VÃ  Táº¡o Delay Do Báº¡n Äáº·t Ra!
+\033[1;32m â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+$daucau2 \033[1;92mNháº­p sá»‘ : \033[1;93m";
+    $len = strlen($a);
+    for ($x = 0; $x < $len; $x++) {
+        print $a[$x];
+    }
+    $_CHOOSE['settingdelay'] = trim(fgets(STDIN));
+    echo $thanhngang1;
+    if ($_CHOOSE['settingdelay'] == 1) {
+        print "$daucau2 \033[1;92mÄÃ£ Tiáº¿p Tá»¥c Sá»­ Dá»¥ng Settings_Delay NÃ y!!\n";
+        $_SESSION['delaylike'] = $json["delaylike"];
+        $_SESSION['delayfollow'] = $json["delayfollow"];
+        $_SESSION['delaycmt'] = $json["delaycmt"];
+        $_SESSION['delayshare'] = $json["delayshare"];
+        $_SESSION['delaypage'] = $json["delaypage"];
+        $_SESSION['delaycx'] = $json["delaycx"];
+        $_SESSION['delaycxcmt'] = $json["delaycmt"];
+        $_SESSION['delaygr'] = $json["delaygr"];
+        $_SESSION['nhiemvu'] = $json["nhiemvu"];
+        $_SESSION['block'] = $json["block"];
+        sleep(2);
+        //end choose 1
+    }
+    if ($_CHOOSE['settingdelay'] == 2) {
+        $_SESSION['delaylike'] = $delaylike = rand(0, 5);
+        $_SESSION['delayfollow'] = $delaysub = rand(25, 40);
+        $_SESSION['delaycmt'] = $delaycmt = rand(15, 25);
+        $_SESSION['delaypage'] = $delaypage = rand(25, 40);
+        $_SESSION['delayshare'] = $delayshare = rand(20, 35);
+        $_SESSION['delaycx'] = $delaycx = rand(0, 5);
+        $_SESSION['delaycxcmt'] = $delaycxcmt = rand(0, 10);
+        $_SESSION['delaygr'] = $delaygr = rand(15, 30);
+        $_SESSION['nhiemvu'] = $nhiemvu = rand(100, 200);
+        $_SESSION['block'] = $block = rand(100, 180);
+        print "$daucau2 \033[1;92mDelay LikePost ÄÆ°á»£c Äá» Xuáº¥t  : \033[1;93m" . $delaylike . "\033[1;92m GiÃ¢y\n";
+        usleep(100000);
+        print "$daucau2 \033[1;92mDelay Follow ÄÆ°á»£c Äá» Xuáº¥t : \033[1;93m" . $delaysub . "\033[1;92m GiÃ¢y\n";
+        usleep(100000);
+        print "$daucau2 \033[1;92mDelay Comment ÄÆ°á»£c Äá» Xuáº¥t : \033[1;93m" . $delaycmt . "\033[1;92m GiÃ¢y\n";
+        usleep(100000);
+        print "$daucau2 \033[1;92mDelay Page ÄÆ°á»£c Äá» Xuáº¥t : \033[1;93m" . $delaypage . "\033[1;92m GiÃ¢y\n";
+        usleep(100000);
+        print "$daucau2 \033[1;92mDelay SharePost ÄÆ°á»£c Äá» Xuáº¥t : \033[1;93m" . $delayshare . "\033[1;92m GiÃ¢y\n";
+        usleep(100000);
+        print "$daucau2 \033[1;92mDelay cáº£m XÃºc ÄÆ°á»£c Äá» Xuáº¥t  : \033[1;93m" . $delaycx . "\033[1;92m GiÃ¢y\n";
+        usleep(100000);
+        print "$daucau2 \033[1;92mDelay Cáº£m XÃºc Cmt ÄÆ°á»£c Äá» Xuáº¥t  : \033[1;93m" . $delaycxcmt . "\033[1;92m GiÃ¢y\n";
+        usleep(100000);
+        print "$daucau2 \033[1;92mDelay Group ÄÆ°á»£c Äá» Xuáº¥t  : \033[1;93m" . $delaygr . "\033[1;92m GiÃ¢y\n";
+        usleep(100000);
+        print "$daucau2 \033[1;92mChá»‘ng Block Sau : \033[1;93m" . $nhiemvu . "\033[1;92m Nhiá»‡m Vá»¥\n";
+        usleep(100000);
+        print "$daucau2 \033[1;92mDelay Chá»‘ng Block : \033[1;93m" . $block . "\033[1;92m GiÃ¢y\n";
+        usleep(100000);
+        sleep(2);
+        //end choose 2
+    }
+    if ($_CHOOSE['settingdelay'] == 3) {
+        if (file_exists('Setting_TDS_Cookie.txt')) {
+            system('rm Setting_TDS_Cookie.txt');
+        }
+        print "$daucau2 \033[1;92mDelay Like : \033[1;33m";
+        $_SESSION['delaylike'] = trim(fgets(STDIN));
+        print "$daucau2 \033[1;92mDelay Sub : \033[1;33m";
+        $_SESSION['delayfollow'] = trim(fgets(STDIN));
+        print "$daucau2 \033[1;92mDelay Comment : \033[1;33m";
+        $_SESSION['delaycmt'] = trim(fgets(STDIN));
+        print "$daucau2 \033[1;32mDelay Fanpage : \033[1;35m";
+        $_SESSION['delaypage'] = trim(fgets(STDIN));
+        print "$daucau2 \033[1;32mDelay Cáº£m XÃºc : \033[1;35m";
+        $_SESSION['delaycx'] = trim(fgets(STDIN));
+        print "$daucau2 \033[1;92mDelay Share : \033[1;33m";
+        $_SESSION['delayshare'] = trim(fgets(STDIN));
+        print "$daucau2 \033[1;32mDelay Reaction Comment : \033[1;35m";
+        $_SESSION['delaycxcmt'] = trim(fgets(STDIN));
+        print "$daucau2 \033[1;32mDelay Group : \033[1;35m";
+        $_SESSION['delaygr'] = trim(fgets(STDIN));
+        print "$daucau2 \033[1;92mSau bao nhiÃªu nhiá»‡m vá»¥ thÃ¬ Nghá»‰ NgÆ¡i: \033[1;33m";
+        $_SESSION['nhiemvu'] = trim(fgets(STDIN));
+        print "$daucau2 \033[1;92mBáº¡n muá»‘n sau\033[1;33m " . $_SESSION['nhiemvu'] . "\033[1;32mnhiá»‡m vá»¥ thÃ¬ Nghá»‰ bao nhiÃªu giÃ¢y : \033[1;33m";
+        $_SESSION['block'] = trim(fgets(STDIN));
+    }
+    echo $thanhngang1;
+    print "$daucau2 \033[1;95mSuccessfully\033[1;92m : ÄÃ£ LÆ°u Setting_Delay NÃ y!!\n";
+    echo $thanhngang1;
+    $setting_delay = json_encode([
+        'delaylike' => $_SESSION['delaylike'],
+        'delayfollow' => $_SESSION['delayfollow'],
+        'delaycmt' => $_SESSION['delaycmt'],
+        'delaypage' => $_SESSION['delaypage'],
+        'delayshare' => $_SESSION['delayshare'],
+        'delaycx' => $_SESSION['delaycx'],
+        'delaycxcmt' => $_SESSION['delaycxcmt'],
+        'delaygr' => $_SESSION['delaygr'],
+        'nhiemvu' => $_SESSION['nhiemvu'],
+        'block' => $_SESSION['block'],
+    ]);
+    file_put_contents('Setting_TDS_Cookie.txt', $setting_delay);
+    sleep(2.5);
+    //end choose 3
+}
+$url = "https://traodoisub.com/scr/user.php";
+$head = array(
+    "Host: traodoisub.com",
+    "accept: application/json, text/javascript, */*; q=0.01",
+    "x-requested-with: XMLHttpRequest",
+    "save-data: on",
+    "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
+    "sec-fetch-site: same-origin",
+    "sec-fetch-mode: cors",
+    "sec-fetch-dest: empty",
+    "referer: https://traodoisub.com/home/"
+);
+$ch   = curl_init();
+curl_setopt_array($ch, array(
+    CURLOPT_URL => $url,
+    CURLOPT_FOLLOWLOCATION => TRUE,
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_POST => 1,
+    CURLOPT_HTTPGET => true,
+    CURLOPT_SSL_VERIFYPEER => 0,
+    CURLOPT_COOKIEFILE => "TDS.txt",
+    CURLOPT_HTTPHEADER => $head,
+    CURLOPT_ENCODING => TRUE
+));
+$data = curl_exec($ch);
+curl_close($ch);
+$json = json_decode($data, true);
+$sodu = $json["xu"];
+$user = $username;
+$nhiemvu = $_SESSION['nhiemvu'];
+
+system('clear');
+echo $logo;
+echo $thanhngang;
+print "$daucau2 \033[1;32mAuto TDS\033[1;37m Cookie\033[1;32m Äa Luá»“ng\n";
+usleep($xx);
+print "$daucau2 \033[1;92mÄÃ£ lÆ°u\033[1;37m $demcki\033[1;32m Cookie FB \n";
+echo $thanhngang1;
+print "$daucau2 \033[1;92mTÃªn TÃ i Khoáº£n TDS : \033[1;33m$user\n";
+print "$daucau2 \033[1;92mXu Hiá»‡n Táº¡i : \033[1;33m$sodu\033[1;32m Xu\n";
+
+//echo $thanhngang;
+/*
+	print "$daucau2 \033[1;32mNhiá»‡m Vá»¥ Like (y/n) : \033[1;33m";
+	if (trim(fgets(STDIN)) == 'y'){
+		array_push($listnv,'like');
+	}
+	print "$daucau2 \033[1;32mNhiá»‡m Vá»¥ Sub (y/n) : \033[1;33m";
+	if (trim(fgets(STDIN)) == 'y'){
+		array_push($listnv,'sub');
+	}
+	print "$daucau2 \033[1;32mNhiá»‡m Vá»¥ Comment (y/n) : \033[1;35m";
+	if (trim(fgets(STDIN)) == 'y'){
+		array_push($listnv,'cmt');
+	}
+	print "$daucau2 \033[1;32mNhiá»‡m Vá»¥ Fanpage (y/n) : \033[1;35m";
+	if (trim(fgets(STDIN)) == 'y'){
+		array_push($listnv,'page');
+	}
+	print "$daucau2 \033[1;32mNhiá»‡m Vá»¥ Cáº£m XÃºc (y/n) : \033[1;35m";
+	if (trim(fgets(STDIN)) == 'y'){
+		array_push($listnv,'cx');
+	}
+	print "$daucau2 \033[1;32mNhiá»‡m Vá»¥ Share (y/n) : \033[1;35m";
+	if (trim(fgets(STDIN)) == 'y'){
+		array_push($listnv,'share');
+	}
+	print "$daucau2 \033[1;32mNhiá»‡m Vá»¥ Cáº£m XÃºc Comment (y/n) : \033[1;35m";
+	if (trim(fgets(STDIN)) == 'y'){
+		array_push($listnv,'cxcmt');
+	}
+    */
+echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "1" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Like\n";
+echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "2" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Like 2\n";
+echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "3" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Like 3\n";
+echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "4" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Follow\n";
+echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "5" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Comment \n";
+echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "6" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Share  $vang(Báº£o TrÃ¬) \n";
+echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "7" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Cáº£m XÃºc  \n";
+echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "8" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Cáº£m XÃºc Comment  \n";
+echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "9" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Like Page  \n";
+echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "10" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Tham Gia Group  \n";
+//echo $daucau2 . $luc . "Nháº­p " . $do . "[" . $vang . "8" . $do . "]" . $luc . " Nhiá»‡m Vá»¥ Join Group \n";
+echo $thanhngang;
+echo $daucau2 . $luc . "Nháº­p Sá»‘ Äá»ƒ Cháº¡y Nhiá»‡m Vá»¥$trang (" . $vang . "VÃ­ dá»¥: 1+2+3" . $trang . "): $vang";
+$loainvtt = trim(fgets(STDIN));
+echo $daucau2 . $luc . "Äá»•i acc bao nhiÃªu nhiá»‡m vá»¥: \033[1;33m";
+$doiacc = (int)trim(fgets(STDIN));
+//echo $daucau2 . $luc . "Báº¡n cÃ³ muá»‘n táº¡m dá»«ng khi háº¿t nhiá»‡m vá»¥(y/n): $vang";
+//$dunghetnv = trim(fgets(STDIN));
+echo $daucau2 . $luc . "Báº¡n cÃ³ muá»‘n nháº­p láº¡i token khi die(y/n): $vang";
+$nhaptkdie = trim(fgets(STDIN));
+//echo $daucau2."áº¨n id FB cá»§a báº¡n (y/n): \033[1;33m"; 
+//$anid = trim(fgets(STDIN));
+
+if (strpos($loainvtt, '1') !== false) {
+    array_push($listnv, 'like');
+}
+if (strpos($loainvtt, '2') !== false) {
+    array_push($listnv, 'like2');
+}
+if (strpos($loainvtt, '3') !== false) {
+    array_push($listnv, 'like3');
+}
+if (strpos($loainvtt, '4') !== false) {
+    array_push($listnv, 'sub');
+}
+if (strpos($loainvtt, '5') !== false) {
+    array_push($listnv, 'cmt');
+}
+if (strpos($loainvtt, '6') !== false) {
+    array_push($listnv, 'share');
+}
+if (strpos($loainvtt, '7') !== false) {
+    array_push($listnv, 'cx');
+}
+if (strpos($loainvtt, '8') !== false) {
+    array_push($listnv, 'cxcmt');
+}
+if (strpos($loainvtt, '9') !== false) {
+    array_push($listnv, 'page');
+}
+if (strpos($loainvtt, '10') !== false) {
+    array_push($listnv, 'group');
+}
+
+while (true) {
+    while (true) {
+
+        if (count($khoToken) == 0) {
+
+            echo $daucau2 . "ToÃ n bá»™ cookie Ä‘Ã£ die\n";
+            echo $daucau2 . "Nháº­p Cookie Facebook.$yellow Dá»«ng ThÃ¬ Enter Nha\n";
+            unlink("File_cookie_FB.txt");
+            for ($a = 1; $a < 999999; $a++) {
+                echo $daucau2 . "Nháº­p Cookie Thá»© $a: $vang";
+                $nhapck = (string)trim(fgets(STDIN));
+                if ($nhapck == '') {
+                    break;
+                }
+                array_push($khoToken, $nhapck);
+            }
+            $js = json_encode($khoToken);
+            $k = fopen("File_cookie_FB.txt", "a+");
+            fwrite($k, $js);
+            fclose($k);
+        }
+
+        $spam = 0;
+        for ($xz = 0; $xz < count($khoToken); $xz++) {
+            $chuacauhinh = "0";
+            while ($chuacauhinh == "0") {
+                if ($demhetnv2 == (count($khoToken) * 2)) {
+                    $demhetnv2 = 0;
+                    $demhetnv = 0;
+
+                    if ($dunghetnv == "y") {
+                        echo $trang . "\râ€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿\n";
+                        echo $daucau2 . $luc . "Táº¥t cáº£ acc Ä‘Ã£ háº¿t nhiá»‡m vá»¥";
+
+                        echo $daucau1 . $luc . "áº¤n enter Ä‘á»ƒ cháº¡y tiáº¿p hoáº·c nháº­p 1 Ä‘á»ƒ thÃªm Cookie: $vang";
+                        $lloafssd = trim(fgets(STDIN));
+
+                        if ($lloafssd == '1') {
+                            echo $daucau2 . "Nháº­p Cookie Facebook.$yellow Dá»«ng ThÃ¬ Enter Nha\n";
+                            unlink("File_cookie_FB.txt");
+                            for ($a = 1; $a < 999999; $a++) {
+                                echo $daucau2 . "Nháº­p Cookie Thá»© $a: $vang";
+                                $nhapck = (string)trim(fgets(STDIN));
+                                if ($nhapck == '') {
+                                    break;
+                                }
+                                array_push($khoToken, $nhapck);
+                            }
+                            $js = json_encode($khoToken);
+                            $k = fopen("File_cookie_FB.txt", "a+");
+                            fwrite($k, $js);
+                            fclose($k);
+                        }
+
+                        //$data   = fread(fopen($namefile, "r"), filesize($namefile));
+                        //$_SESSION["username"] = explode('|', $data)[0];
+                        //$_SESSION['password'] = explode('|', $data)[1];
+                        $ch = curl_init();
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                        curl_setopt($ch, CURLOPT_URL, 'https://traodoisub.com/scr/login.php');
+                        curl_setopt($ch, CURLOPT_COOKIEJAR, "TDS.txt");
+                        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Linux; Android 10; SM-J600G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36');
+                        $login = array('username' => $username, 'password' => $password, 'submit' => ' ÄÄƒng Nháº­p');
+                        curl_setopt($ch, CURLOPT_POST, count($login));
+                        curl_setopt($ch, CURLOPT_POSTFIELDS, $login);
+                        curl_setopt($ch, CURLOPT_COOKIEFILE, "TDS.txt");
+                        $source = curl_exec($ch);
+                        curl_close($ch);
+                    }
+                }
+
+
+                $spam = 0;
+                $cookie = $khoToken[$xz];
+
+                ketnoimangV1();
+                $token_eaab = lay_token_moi_v1($cookie);
+                $tenfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'name'};
+                $idfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'id'};
+                //$page = thongtin('me', $cookie, $useragent);
+                //$idfb = explode('%',explode('?lst=', $page)[1])[0];
+                if ($tenfb == '') {
+                    $page = thongtin('me', $cookie, $useragent);
+                    $idfb = explode('%', explode('?lst=', $page)[1])[0];
+                }
+                if ($idfb == '') {
+                    if ($idfb == '') {
+                        ketnoimangV1();
+                        $token_eaab = lay_token_moi_v1($cookie);
+                        $idfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'id'};
+                        $tenfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'name'};
+                        if ($tenfb == '') {
+                            $page = thongtin('me', $cookie, $useragent);
+                            $tenfb = explode('<', explode('>', explode('</span>', explode('<span>', $page)[2])[0])[1])[0];
+                            $idfb = explode('%', explode('?lst=', $page)[1])[0];
+                        }
+                        if ($tenfb == '') {
+                            ketnoimangV1();
+                            $token_eaab = lay_token_moi_v1($cookie);
+                            $idfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'id'};
+                            $tenfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'name'};
+                            if ($idfb == '') {
+                                $page = thongtin('me', $cookie, $useragent);
+                                $tenfb = explode('<', explode('>', explode('</span>', explode('<span>', $page)[2])[0])[1])[0];
+                                $idfb = explode('%', explode('?lst=', $page)[1])[0];
+                            }
+                            if ($idfb == '') {
+                                $tenfb = namefb($cookie);
+                                $idfb = explode(';', explode('c_user=', $cookie)[1])[0];
+
+                                if ($tenfb == '') {
+                                    echo $red . "Cookie die";
+                                    array_splice($khoToken, $xz, 1);
+                                    $spam = 1;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    ketnoimangV1();
+
+
+
+                    // Láº¥y ID FB
+                    //$token_eaab = lay_token_moi_v1($cookie);
+                    //$tenfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'name'};
+                    // $idfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'id'};
+                    //$page = thongtin('me', $cookie, $useragent);
+                    //láº¥y tÃªn
+                    //$tenfb = explode('<', explode('>', explode('</span>', explode('<span>', $page)[2])[0])[1])[0];
+                    //$idfb = explode('%',explode('?lst=', $page)[1])[0];
+
+
+                    if ($idfb != "") {
+
+                        //$tenfb11 = $tenfb;
+                        while (true) {
+                            $spam = 1;
+                            $demlgin++;
+
+                            if ($demlgin <= 1 or $demlgin > 30) {
+                                $demlgin = 1;
+                                $data   = fread(fopen($namefile, "r"), filesize($namefile));
+                                $username = explode('|', $data)[0];
+                                $password = explode('|', $data)[1];
+                                $ch = curl_init();
+                                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                                curl_setopt($ch, CURLOPT_URL, 'https://traodoisub.com/scr/login.php');
+                                curl_setopt($ch, CURLOPT_COOKIEJAR, "TDS.txt");
+                                curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Linux; Android 10; SM-J600G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36');
+                                $login = array('username' => $username, 'password' => $password, 'submit' => ' ÄÄƒng Nháº­p');
+                                curl_setopt($ch, CURLOPT_POST, count($login));
+                                curl_setopt($ch, CURLOPT_POSTFIELDS, $login);
+                                curl_setopt($ch, CURLOPT_COOKIEFILE, "TDS.txt");
+                                $source = curl_exec($ch);
+                                curl_close($ch);
+                            }
+
+                            //if((int)date("i") > $timetam){
+                            //logintds();
+                            //}else{usleep(1);}
+                            ketnoimangV1();
+                            $d = datnick($idfb);
+                            if ($d == 1) {
+                                $demlgin = 2;
+                                //if($anid == "y"){
+                                //  $idfb = substr($idfb, -4);    // returns "f"
+                                //$idfb = "##########".$idfb;
+                                //}else{usleep(1);}
+                                $k = fopen("Run_tool.txt", "w+");
+                                $js = $codeao;
+                                fwrite($k, $js);
+                                fclose($k);
+                                echo "\r                            \r";
+                                $demhetnv = 0;
+                                if ($tenfb == "") {
+                                    $tenfb = namefb($cookie);
+                                }
+                                echo "\033[1;32mâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n";
+                            echo $vang."Äang Cáº¥u HÃ¬nh ID: ".$luc.$idfb." ".$vang."TÃªn FB: ".$luc.$tenfb."\n";
+                            echo "\033[1;32mâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n";
+                                $chuacauhinh = "1";
+                                $spam = 0;
+                            } else {
+                                echo "\r                            \r";
+                                echo $do . "Cáº¥u hÃ¬nh tháº¥t báº¡i vui lÃ²ng thÃªm FB $idfb vÃ o cáº¥u hÃ¬nh";
+                            }
+                            if ($spam == 0) {
+                                break;
+                            } else {
+                                usleep(1);
+                            }
+                        }
+                    } else {
+                        echo "\r                            \r";
+                        echo $do . "Cookie die   \r";
+                        array_splice($khoToken, $xz, 1);
+                        $spam = 1;
+                        break;
+                    }
+                }
+            }
+
+
+            while (true) {
+
+                if ($spam == 1) {
+                    break;
+                }
+                // $page = thongtin('me', $cookie, $useragent);
+                // $idfb = explode('%',explode('?lst=', $page)[1])[0];
+                // if ($idfb == '') {
+                //     echo $red . "Cookie die";
+                //     array_splice($khoToken, $xz, 1);
+                //     $spam = 1; break;
+                // }
+                $sodu = getxu();
+                $rand = $listnv[array_rand($listnv, 1)];
+                ketnoimangV1();
+                $idfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'id'};
+                if ($idfb == '') {
+                    $page = thongtin('me', $cookie, $useragent);
+                    $idfb = explode('%', explode('?lst=', $page)[1])[0];
+                }
+                if ($idfb == '') {
+                    ketnoimangV1();
+                    $idfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'id'};
+                    if ($idfb == '') {
+                        $page = thongtin('me', $cookie, $useragent);
+                        $idfb = explode('%', explode('?lst=', $page)[1])[0];
+                    }
+                    if ($idfb == '') {
+                        ketnoimangV1();
+                        $idfb = json_decode(file_get_contents('https://graph.facebook.com/me/?access_token=' . $token_eaab))->{'id'};
+                        if ($idfb == '') {
+                            $page = thongtin('me', $cookie, $useragent);
+                            $idfb = explode('%', explode('?lst=', $page)[1])[0];
+                        }
+                        if ($idfb == '') {
+                            ketnoimangV1();
+                            $tenfb = namefb($cookie);
+                            $idfb = explode(';', explode('c_user=', $cookie)[1])[0];
+                            if ($tenfb == '') {
+                                ketnoimangV1();
+                                $dem_check_die++;
+                                if ($dem_check_die > 2) {
+                                    $dem_check_die = 0;
+                                    echo $red . "Cookie die";
+                                    array_splice($khoToken, $xz, 1);
+                                    if ($nhaptkdie == "y" or $nhaptkdie == "Y") {
+                                        echo $daucau2 . "Nháº­p Cookie Facebook.$yellow Dá»«ng ThÃ¬ Enter Nha\n";
+                                        unlink("File_cookie_FB.txt");
+                                        for ($a = 1; $a < 999999; $a++) {
+                                            echo $daucau2 . "Nháº­p Cookie Thá»© $a: $vang";
+                                            $nhapck = (string)trim(fgets(STDIN));
+                                            if ($nhapck == '') {
+                                                break;
+                                            }
+                                            array_push($khoToken, $nhapck);
+                                        }
+                                        $js = json_encode($khoToken);
+                                        $k = fopen("File_cookie_FB.txt", "a+");
+                                        fwrite($k, $js);
+                                        fclose($k);
+                                    }
+                                    $spam = 1;
+                                    break;
+                                }
+                            }
+                        }
+                        /*
+                        if ($idfb == '') {
+                            echo $red . "Cookie $vang $tenfb11 $do die";
+                            array_splice($khoToken, $xz, 1);
+                            if ($nhaptkdie == "y" or $nhaptkdie == "Y") {
+                                echo $daucau2 . "Nháº­p Cookie Facebook.$yellow Dá»«ng ThÃ¬ Enter Nha\n";
+                                for ($a = 1; $a < 999999; $a++) {
+                                    echo $daucau2 . "Nháº­p Cookie Thá»© $a: $vang";
+                                    $nhapck = (string)trim(fgets(STDIN));
+                                    if ($nhapck == '') {
+                                        break;
+                                    }
+                                    array_push($khoToken, $nhapck);
+                                }
+                            }
+                            $spam = 1;
+                            break;
+                        }
+                        */
+                    }
+                }
+
+                //nvlike
+                if ($rand == 'like') {
+                    //ketnoimangV1();
+                    $x = getnv('like');
+                    if ($x != "") {
+
+                        $info = json_decode($x, true);
+                        $d = "0";
+                        while (true) {
+                            $id = $info["data"]["" . $d . ""]["id"];
+                            if ($id < '1') {
+                                print "$daucau2 \033[1;34mLikePost táº¡m thá»i háº¿t nhiá»‡m vá»¥\r";
+                                if (count($khoToken) > 1) {
+                                    $demhetnv++;
+                                }
+                                if ($demhetnv == 4) {
+                                    $spam = 1;
+                                }
+                                break;
+                            } else {
+                                $demhetnv = 0;
+                                $d += 1;
+                                //ketnoimangV1();
+                                $g = camxuc($id, 'LIKE', $cookie);
+                                // $page = thongtin('me', $cookie, $useragent);
+                                // $idfb = explode('%',explode('?lst=', $page)[1])[0];
+                                // if ($idfb == '') {
+                                //     echo $red . "Cookie die";
+                                //     array_splice($khoToken, $xz, 1);
+                                //     $spam = 1; break;
+                                // }
+                            }
+                            $s = nhantien('like', 'like', $id);
+
+                            date_default_timezone_set('Asia/Ho_Chi_Minh');
+                            $t = date('H:i:s');
+                            $rd = rand(1, 7);
+                            $id = substr($id . "                       ", 0, 17);
+                            if ($s == 2) {
+                                $nv += 1;
+                                $sodu += 300;
+                                $duocne = $duocne + 1;
+                                //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m LIKE  \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+300 \033[1;31m| \033[1;33m".$sodu."\n";
+                                $tt = "\r\033[1;91m[\033[1;93m" . $duocne . "\033[1;91m]\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m |\033[1;93m" . $_SESSION["C_LIKE"] . "\033[1;91m| \033[1;97m" . $id . "\033[1;91m |\033[1;92m +300 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\n";
+
+                                for ($i = 1; $i < (strlen($tt) + 1); $i++) {
+                                    print $tt[$i];
+                                    usleep(200);
+                                }
+                                if ($spam == 1) {
+                                    break;
+                                }
+                                if (count($khoToken) > 1) {
+                                    if ($duocne % $doiacc == 0) {
+                                        $spam = 1;
+                                        break;
+                                    } else {
+                                        usleep(1);
+                                    }
+                                } else {
+                                    usleep(1);
+                                }
+                                loadtime('delaylike');
+                                if ($nv == $nhiemvu) {
+                                    chongbl('block');
+
+                                    $nv = "0";
+                                }
+                            } else {
+                                print "\r";
+                            }
+                        }
+                    }
+                    //like2
+                } elseif ($rand == 'like2') {
+                    //ketnoimangV1();
+                    $x = getnv('likegiare');
+                    if ($x != "") {
+
+                        $info = json_decode($x, true);
+                        $d = "0";
+                        while (true) {
+                            $id = $info["data"]["" . $d . ""]["id"];
+                            if ($id < '1') {
+                                print "$daucau2 \033[1;34mLike 2 táº¡m thá»i háº¿t nhiá»‡m vá»¥\r";
+                                if (count($khoToken) > 1) {
+                                    $demhetnv++;
+                                }
+                                if ($demhetnv == 4) {
+                                    $spam = 1;
+                                }
+                                break;
+                            } else {
+                                $demhetnv = 0;
+                                $d += 1;
+                                //ketnoimangV1();
+                                $g = camxuc($id, 'LIKE', $cookie);
+                            }
+                            $s = nhantien('likegiare', 'likegiare', $id);
+
+                            date_default_timezone_set('Asia/Ho_Chi_Minh');
+                            $t = date('H:i:s');
+                            $rd = rand(1, 7);
+                            $id = substr($id . "                       ", 0, 17);
+                            if ($s == 2) {
+                                $nv += 1;
+                                $sodu += 150;
+                                $duocne = $duocne + 1;
+                                //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m LIKE  \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+300 \033[1;31m| \033[1;33m".$sodu."\n";
+                                $tt = "\r\033[1;91m[\033[1;93m" . $duocne . "\033[1;91m]\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m |\033[1;93m" . $_SESSION["C_LIKE2"] . "\033[1;91m| \033[1;97m" . $id . "\033[1;91m |\033[1;92m +150 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\n";
+
+                                for ($i = 1; $i < (strlen($tt) + 1); $i++) {
+                                    print $tt[$i];
+                                    usleep(200);
+                                }
+                                if ($spam == 1) {
+                                    break;
+                                }
+                                if (count($khoToken) > 1) {
+                                    if ($duocne % $doiacc == 0) {
+                                        $spam = 1;
+                                        break;
+                                    } else {
+                                        usleep(1);
+                                    }
+                                } else {
+                                    usleep(1);
+                                }
+                                loadtime('delaylike');
+                                if ($nv == $nhiemvu) {
+                                    chongbl('block');
+
+                                    $nv = "0";
+                                }
+                            } else {
+                                print "\r";
+                            }
+                        }
+                    }
+                    //nvsub
+                } elseif ($rand == 'like3') {
+                    //ketnoimangV1();
+                    $x = getnv('likesieure');
+                    if ($x != "") {
+
+                        $info = json_decode($x, true);
+                        $d = "0";
+                        while (true) {
+                            $id = $info["data"]["" . $d . ""]["id"];
+                            if ($id < '1') {
+                                print "$daucau2 \033[1;34mLike 2 táº¡m thá»i háº¿t nhiá»‡m vá»¥\r";
+                                if (count($khoToken) > 1) {
+                                    $demhetnv++;
+                                }
+                                if ($demhetnv == 4) {
+                                    $spam = 1;
+                                }
+                                break;
+                            } else {
+                                $demhetnv = 0;
+                                $d += 1;
+                                //ketnoimangV1();
+                                $g = camxuc($id, 'LIKE', $cookie);
+                            }
+                            $s = nhantien('likesieure', 'likesieure', $id);
+
+                            date_default_timezone_set('Asia/Ho_Chi_Minh');
+                            $t = date('H:i:s');
+                            $rd = rand(1, 7);
+                            $id = substr($id . "                       ", 0, 17);
+                            if ($s == 2) {
+                                $nv += 1;
+                                $sodu += 99;
+                                $duocne = $duocne + 1;
+                                //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m LIKE  \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+300 \033[1;31m| \033[1;33m".$sodu."\n";
+                                $tt = "\r\033[1;91m[\033[1;93m" . $duocne . "\033[1;91m]\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m |\033[1;93m" . $_SESSION["C_LIKE3"] . "\033[1;91m| \033[1;97m" . $id . "\033[1;91m |\033[1;92m +99 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\n";
+
+                                for ($i = 1; $i < (strlen($tt) + 1); $i++) {
+                                    print $tt[$i];
+                                    usleep(200);
+                                }
+                                if ($spam == 1) {
+                                    break;
+                                }
+                                if (count($khoToken) > 1) {
+                                    if ($duocne % $doiacc == 0) {
+                                        $spam = 1;
+                                        break;
+                                    } else {
+                                        usleep(1);
+                                    }
+                                } else {
+                                    usleep(1);
+                                }
+                                loadtime('delaylike');
+                                if ($nv == $nhiemvu) {
+                                    chongbl('block');
+
+                                    $nv = "0";
+                                }
+                            } else {
+                                print "\r";
+                            }
+                        }
+                    }
+                    //nvsub
+                } else if ($rand == 'sub') {
+                    //ketnoimangV1();
+                    $x = getnv('follow');
+                    if ($x != "") {
+                        $info = json_decode($x, true);
+                        $d = "0";
+                        while (true) {
+                            $id = $info["data"]["" . $d . ""]["id"];
+                            if ($id < '1') {
+                                print "$daucau2 \033[1;34mSub táº¡m thá»i háº¿t nhiá»‡m vá»¥\r";
+                                if (count($khoToken) > 1) {
+                                    $demhetnv++;
+                                }
+                                if ($demhetnv == 4) {
+                                    $spam = 1;
+                                }
+                                break;
+                            } else {
+                                $demhetnv = 0;
+                                $d += 1;
+                                //ketnoimangV1();
+                                $g = follow($id, $cookie);
+
+                                if (strpos($g[0], 'ÄÄƒng nháº­p') !== false) {
+                                    // $page = thongtin('me', $cookie, $useragent);
+                                    // //láº¥y tÃªn
+                                    // $tenfb = explode('<', explode('>', explode('</span>', explode('<span>', $page)[2])[0])[1])[0];
+                                    // $idfb = explode('%',explode('?lst=', $page)[1])[0];
+                                    // if ($idfb != '') {
+                                    // } else {
+                                    //     echo "\r";
+                                    //     echo "                                                      \r";
+                                    //     echo "\033[1;31m [\033[1;37mâœ…\033[1;31m]\033[1;37m => \033[1;32m" . $red . "Cookie Die\n";
+                                    //     array_splice($khocookie, $xz, 1);
+                                    //     $spam = 1;
+                                    //     break;
+                                    // }
+                                } elseif (strpos($g[1], 'TÃ i khoáº£n cá»§a báº¡n hiá»‡n bá»‹ háº¡n cháº¿') !== false) {
+                                    echo "                                                      \r";
+                                    echo "\033[1;31m [\033[1;37mâœ…\033[1;31m]\033[1;37m => \033[1;32m" . $red . "ÄÃ£ Bá»‹ Block Follow\n";
+                                    array_splice($khocookie, $xz, 1);
+                                    $spam = 1;
+                                    break;
+                                } elseif (strpos($g[1], 'loi') !== false) {
+                                } else {
+                                    $s = nhantien('follow', 'follow', $id);
+                                    if ($idfb == "100011081416081") {
+                                        huyfollow($id, $useragent, $cookie);
+                                    }
+                                    date_default_timezone_set('Asia/Ho_Chi_Minh');
+                                    $t = date('H:i:s');
+                                    $rd = rand(1, 7);
+                                    if ($s == 2) {
+                                        $nv += 1;
+                                        $sodu += 600;
+                                        $d += 1;
+                                        $duocne = $duocne + 1;
+                                        //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m FOLLOW  \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+600 \033[1;31m| \033[1;33m".$sodu."\n";
+                                        $tt = "\r\033[1;91m[\033[1;93m" . $duocne . "\033[1;91m]\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m |\033[1;93m" . $_SESSION["C_FOLLOW"] . "\033[1;91m| \033[1;97m" . $id . "\033[1;91m |\033[1;92m +600 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\n";
+
+                                        for ($i = 1; $i < (strlen($tt) + 1); $i++) {
+                                            print $tt[$i];
+                                            usleep(200);
+                                        }
+                                        if ($spam == 1) {
+                                            break;
+                                        }
+                                        if ($spam == 1) {
+                                            break;
+                                        }
+                                        if (count($khoToken) > 1) {
+                                            if ($duocne % $doiacc == 0) {
+                                                $spam = 1;
+                                                break;
+                                            } else {
+                                                usleep(1);
+                                            }
+                                        } else {
+                                            usleep(1);
+                                        }
+                                        loadtime('delayfollow');
+
+                                        if ($nv == $nhiemvu) {
+                                            chongbl('block');
+
+                                            $nv = "0";
+                                        }
+                                    } else {
+                                        print "\r";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } else if ($rand == 'cxcmt') {
+                    //ketnoimangV1();
+                    $x = getnv('reactioncmt');
+                    if ($x != "") {
+                        $info = json_decode($x, true);
+                        $d = "0";
+                        while (true) {
+                            $id = $info["data"]["" . $d . ""]["id"];
+                            $type = $info["data"]["" . $d . ""]["type"];
+                            if ($id < '1') {
+                                print "$daucau2 \033[1;34mReactionCMT táº¡m thá»i háº¿t nhiá»‡m vá»¥\r";
+                                if (count($khoToken) > 1) {
+                                    $demhetnv++;
+                                }
+                                if ($demhetnv == 4) {
+                                    $spam = 1;
+                                }
+                                break;
+                            } else {
+                                $demhetnv = 0;
+                                $d += 1;
+                                //ketnoimangV1();
+                                $g = reaction_cmt($id, $idfb, $type, $cookie);
+                                // $page = thongtin('me', $cookie, $useragent);
+                                // $idfb = explode('%',explode('?lst=', $page)[1])[0];
+                                // if ($idfb == '') {
+                                //     echo $red . "Cookie die";
+                                //     array_splice($khoToken, $xz, 1);
+                                //     $spam = 1; break;
+                                // }
+                            }
+                            $s = nhantien($type, 'reactioncmt', $id);
+                            date_default_timezone_set('Asia/Ho_Chi_Minh');
+                            $t = date('H:i:s');
+                            $rd = rand(1, 7);
+                            $id = explode('_', $id)[1];
+                            $id = substr($id . "                       ", 0, 17);
+                            if ($s == 2) {
+                                $nv += 1;
+                                $sodu += 600;
+                                $duocne = $duocne + 1;
+                                //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m".$type."|CMT \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+600 \033[1;31m| \033[1;33m".$sodu."\n";
+
+                                if (strpos($type, 'LIKE')) {
+                                    $type = ' LIKE CMT ';
+                                }
+                                if (strpos($type, 'LOVE')) {
+                                    $type = ' LOVE CMT ';
+                                }
+                                if (strpos($type, 'CARE')) {
+                                    $type = ' CARE CMT ';
+                                }
+                                if (strpos($type, 'HAHA')) {
+                                    $type = ' HAHA CMT ';
+                                }
+                                if (strpos($type, 'WOW')) {
+                                    $type = '  WOW CMT ';
+                                }
+                                if (strpos($type, 'SAD')) {
+                                    $type = '  SAD CMT ';
+                                }
+                                if (strpos($type, 'ANGRY')) {
+                                    $type = ' ANGRY CMT';
+                                }
+                                $tt = "\r\033[1;91m[\033[1;93m" . $duocne . "\033[1;91m]\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m | \033[1;93m" . $type . "\033[1;91m | \033[1;97m" . $id . "\033[1;91m |\033[1;92m +600 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\n";
+
+                                for ($i = 1; $i < (strlen($tt) + 1); $i++) {
+                                    print $tt[$i];
+                                    usleep(200);
+                                }
+                                if ($spam == 1) {
+                                    break;
+                                }
+                                if (count($khoToken) > 1) {
+                                    if ($duocne % $doiacc == 0) {
+                                        $spam = 1;
+                                        break;
+                                    } else {
+                                        usleep(1);
+                                    }
+                                } else {
+                                    usleep(1);
+                                }
+                                loadtime('delaycxcmt');
+
+                                if ($nv == $nhiemvu) {
+                                    chongbl('block');
+
+                                    $nv = "0";
+                                }
+                            } else {
+                                print "\r";
+                            }
+                        }
+                    }
+                } else if ($rand == 'page') {
+                    //ketnoimangV1();
+                    $x = getnv('fanpage');
+                    if ($x != "") {
+                        $info = json_decode($x, true);
+                        $d = "0";
+                        while (true) {
+                            $id = $info["data"]["" . $d . ""]["id"];
+                            if ($id < '1') {
+                                print "$daucau2 \033[1;34mPAGE táº¡m thá»i háº¿t nhiá»‡m vá»¥\r";
+                                if (count($khoToken) > 1) {
+                                    $demhetnv++;
+                                }
+                                if ($demhetnv == 4) {
+                                    $spam = 1;
+                                }
+                                break;
+                            } else {
+                                $demhetnv = 0;
+                                $d += 1;
+                                //ketnoimangV1();
+                                $g = page($id, $cookie);
+                                $s = nhantien('fanpage', 'fanpage', $id);
+                                date_default_timezone_set('Asia/Ho_Chi_Minh');
+                                $t = date('H:i:s');
+                                $rd = rand(1, 7);
+                                $id = substr($id . "                       ", 0, 17);
+                                if ($s == 2) {
+                                    $nv += 1;
+                                    $sodu += 600;
+                                    $duocne = $duocne + 1;
+                                    //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m PAGE  \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+600 \033[1;31m| \033[1;33m".$sodu."\n";
+                                    $tt = "\r\033[1;91m[\033[1;93m" . $duocne . "\033[1;91m]\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m |\033[1;93m" . $_SESSION["C_PAGE"] . "\033[1;91m| \033[1;97m" . $id . "\033[1;91m |\033[1;92m +600 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\n";
+                                    for ($i = 1; $i < (strlen($tt) + 1); $i++) {
+                                        print $tt[$i];
+                                        usleep(200);
+                                    }
+                                    if ($spam == 1) {
+                                        break;
+                                    }
+                                    if (count($khoToken) > 1) {
+                                        if ($duocne % $doiacc == 0) {
+                                            $spam = 1;
+                                            break;
+                                        } else {
+                                            usleep(1);
+                                        }
+                                    } else {
+                                        usleep(1);
+                                    }
+                                    loadtime('delaypage');
+
+                                    if ($nv == $nhiemvu) {
+                                        chongbl('block');
+
+                                        $nv = "0";
+                                    }
+                                } else {
+                                    print "\r";
+                                }
+                            }
+                        }
+                    }
+                } else if ($rand == 'share') {
+                    //ketnoimangV1();
+                    $x = getnv('share');
+                    if ($x != "") {
+                        $info = json_decode($x, true);
+                        $d = "0";
+                        while (true) {
+                            $id = $info["data"]["" . $d . ""]["id"];
+                            if ($id < '1') {
+                                print "$daucau2 \033[1;34mShare táº¡m thá»i háº¿t nhiá»‡m vá»¥\r";
+                                if (count($khoToken) > 1) {
+                                    $demhetnv++;
+                                }
+                                if ($demhetnv == 4) {
+                                    $spam = 1;
+                                }
+                                break;
+                            } else {
+                                $demhetnv = 0;
+                                $d += 1;
+                                //ketnoimangV1();
+                                share($id, $cookie);
+                                $s = nhantien('share', 'share', $id);
+                                date_default_timezone_set('Asia/Ho_Chi_Minh');
+                                $t = date('H:i:s');
+                                $rd = rand(1, 7);
+                                $id = substr($id . "                       ", 0, 17);
+                                if ($s == 2) {
+                                    $nv += 1;
+                                    $sodu += 800;
+                                    $duocne = $duocne + 1;
+                                    // $tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m SHARE  \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+800 \033[1;31m| \033[1;33m".$sodu."\n";
+                                    $tt = "\r\033[1;91m[\033[1;93m" . $duocne . "\033[1;91m]\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m |\033[1;93m" . $_SESSION["C_SHARE"] . "\033[1;91m| \033[1;97m" . $id . "\033[1;91m |\033[1;92m +800 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\n";
+
+                                    for ($i = 1; $i < (strlen($tt) + 1); $i++) {
+                                        print $tt[$i];
+                                        usleep(1500);
+                                    }
+                                    if ($spam == 1) {
+                                        break;
+                                    }
+                                    if (count($khoToken) > 1) {
+                                        if ($duocne % $doiacc == 0) {
+                                            $spam = 1;
+                                            break;
+                                        } else {
+                                            usleep(1);
+                                        }
+                                    } else {
+                                        usleep(1);
+                                    }
+                                    loadtime('delayshare');
+
+                                    if ($nv == $nhiemvu) {
+                                        chongbl('block');
+
+                                        $nv = "0";
+                                    }
+                                } else {
+                                    print "\r";
+                                }
+                            }
+                        }
+                    }
+                } else if ($rand == 'cx') {
+                    //ketnoimangV1();
+                    $x = getnv('reaction');
+                    if ($x != "") {
+                        $info = json_decode($x, true);
+                        $d = "0";
+                        while (true) {
+                            $id = $info["data"]["" . $d . ""]["id"];
+                            $type = $info["data"]["" . $d . ""]["type"];
+                            if ($id < '1') {
+                                print "$daucau2 \033[1;34mReaction táº¡m thá»i háº¿t nhiá»‡m vá»¥\r";
+                                if (count($khoToken) > 1) {
+                                    $demhetnv++;
+                                }
+                                if ($demhetnv == 4) {
+                                    $spam = 1;
+                                }
+                                break;
+                            } else {
+                                $demhetnv = 0;
+                                $d += 1;
+                                //ketnoimangV1();
+                                camxuc($id, $type, $cookie);
+                                $tp = $type;
+                                $s = nhantien($tp, 'reaction', $id);
+
+                                date_default_timezone_set('Asia/Ho_Chi_Minh');
+                                $t = date('H:i:s');
+                                $rd = rand(1, 7);
+                                $id = substr($id . "                       ", 0, 17);
+                                if ($s == 2) {
+                                    $nv += 1;
+                                    $sodu += 400;
+                                    $duocne = $duocne + 1;
+                                    //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m".$type." \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+400 \033[1;31m| \033[1;33m".$sodu."\n";
+
+                                    if (strpos($type, 'LIKE')) {
+                                        $type = $_SESSION["C_LIKE"];
+                                    }
+                                    if (strpos($type, 'LOVE')) {
+                                        $type = $_SESSION["C_LOVE"];
+                                    }
+                                    if (strpos($type, 'CARE')) {
+                                        $type = $_SESSION["C_CARE"];
+                                    }
+                                    if (strpos($type, 'HAHA')) {
+                                        $type = $_SESSION["C_HAHA"];
+                                    }
+                                    if (strpos($type, 'WOW')) {
+                                        $type = $_SESSION["C_WOW"];
+                                    }
+                                    if (strpos($type, 'SAD')) {
+                                        $type = $_SESSION["C_SAD"];
+                                    }
+                                    if (strpos($type, 'ANGRY')) {
+                                        $type = $_SESSION["C_ANGRY"];
+                                    }
+                                    $tt = "\r\033[1;91m[\033[1;93m" . $duocne . "\033[1;91m]\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m | \033[1;93m" . $type . "\033[1;91m | \033[1;97m" . $id . "\033[1;91m |\033[1;92m +400 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\n";
+
+                                    for ($i = 1; $i < (strlen($tt) + 1); $i++) {
+                                        print $tt[$i];
+                                        usleep(1500);
+                                    }
+                                    if ($spam == 1) {
+                                        break;
+                                    }
+                                    if (count($khoToken) > 1) {
+                                        if ($duocne % $doiacc == 0) {
+                                            $spam = 1;
+                                            break;
+                                        } else {
+                                            usleep(1);
+                                        }
+                                    } else {
+                                        usleep(1);
+                                    }
+                                    loadtime('delaycx');
+
+                                    if ($nv == $nhiemvu) {
+                                        chongbl('block');
+
+                                        $nv = "0";
+                                    }
+                                } else {
+                                    print "\r";
+                                }
+                            }
+                        }
+                    }
+                } elseif ($rand == 'cmt') {
+                    //ketnoimangV1();
+                    $x = getnv('comment');
+                    if ($x != "") {
+                        $info = json_decode($x, true);
+                        $d = "0";
+                        while (true) {
+                            $id = $info["data"]["" . $d . ""]["id"];
+                            $msg = $info["data"]["" . $d . ""]["msg"];
+                            if ($id < '1') {
+                                print "$daucau2 \033[1;34mCMT táº¡m thá»i háº¿t nhiá»‡m vá»¥\r";
+                                if (count($khoToken) > 1) {
+                                    $demhetnv++;
+                                }
+                                if ($demhetnv == 4) {
+                                    $spam = 1;
+                                }
+                                break;
+                            } else {
+                                $demhetnv = 0;
+                                $d += 1;
+                                //ketnoimangV1();
+                                //$g = cmt($access_token, $id, $cookie, $msg);
+                                $g = cmt_fb_cookie_new($id, $cookie, $msg);
+                                // $page = thongtin('me', $cookie, $useragent);
+                                // $idfb = explode('%',explode('?lst=', $page)[1])[0];
+                                // if ($idfb == '') {
+                                //     echo $red . "Cookie die";
+                                //     array_splice($khoToken, $xz, 1);
+                                //     $spam = 1; break;
+                                // } else {
+                                $s = nhantien('like', 'comment', $id);
+                                date_default_timezone_set('Asia/Ho_Chi_Minh');
+                                $t = date('H:i:s');
+                                $rd = rand(1, 7);
+                                $id = substr($id . "                       ", 0, 17);
+                                if ($s == 2) {
+                                    $nv += 1;
+                                    $sodu += 600;
+                                    $duocne = $duocne + 1;
+                                    //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m CMT  \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+600 \033[1;31m| \033[1;33m".$sodu."\n";
+                                    $tt = "\r\033[1;91m[\033[1;93m" . $duocne . "\033[1;91m]\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m |\033[1;93m" . $_SESSION["C_CMT"] . "\033[1;91m| \033[1;97m" . $id . "\033[1;91m |\033[1;92m +600 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\033[1;96m $msg\n";
+
+                                    for ($i = 1; $i < (strlen($tt) + 1); $i++) {
+                                        print $tt[$i];
+                                        usleep(200);
+                                    }
+                                    if ($spam == 1) {
+                                        break;
+                                    }
+                                    if (count($khoToken) > 1) {
+                                        if ($duocne % $doiacc == 0) {
+                                            $spam = 1;
+                                            break;
+                                        } else {
+                                            usleep(1);
+                                        }
+                                    } else {
+                                        usleep(1);
+                                    }
+                                    loadtime('delaycmt');
+
+                                    if ($nv == $nhiemvu) {
+                                        chongbl('block');
+
+                                        $nv = "0";
+                                    }
+                                } else {
+                                    print "\r";
+                                }
+                                //}
+                            }
+                        }
+                    }
+                } elseif ($rand == 'group') {
+                    //ketnoimangV1();
+                    $x = getnv('group');
+                    if ($x != "") {
+                        $info = json_decode($x, true);
+                        $d = "0";
+                        while (true) {
+                            $id = $info["data"]["" . $d . ""]["id"];
+                            if ($id < '1') {
+                                print "$daucau2 \033[1;34mGroup táº¡m thá»i háº¿t nhiá»‡m vá»¥\r";
+                                if (count($khoToken) > 1) {
+                                    $demhetnv++;
+                                }
+                                if ($demhetnv == 4) {
+                                    $spam = 1;
+                                }
+                                break;
+                            } else {
+                                $demhetnv = 0;
+                                $d += 1;
+                                //ketnoimangV1();
+                                $g = group_fb($id, $useragent, $cookie);
+                                $s = nhantien('group', 'group', $id);
+
+                                date_default_timezone_set('Asia/Ho_Chi_Minh');
+                                $t = date('H:i:s');
+                                $rd = rand(1, 7);
+                                $id = substr($id . "                       ", 0, 17);
+                                if ($s == 2) {
+                                    $nv += 1;
+                                    $sodu += 1400;
+                                    $duocne = $duocne + 1;
+                                    //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m LIKE  \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+300 \033[1;31m| \033[1;33m".$sodu."\n";
+                                    $tt = "\r\033[1;91m[\033[1;93m" . $duocne . "\033[1;91m]\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m |\033[1;93m" . $_SESSION["C_GROUP"] . "\033[1;91m| \033[1;97m" . $id . "\033[1;91m |\033[1;92m +1400 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\n";
+
+                                    for ($i = 1; $i < (strlen($tt) + 1); $i++) {
+                                        print $tt[$i];
+                                        usleep(200);
+                                    }
+                                    if ($spam == 1) {
+                                        break;
+                                    }
+                                    if (count($khoToken) > 1) {
+                                        if ($duocne % $doiacc == 0) {
+                                            $spam = 1;
+                                            break;
+                                        } else {
+                                            usleep(1);
+                                        }
+                                    } else {
+                                        usleep(1);
+                                    }
+                                    loadtime('delaygr');
+                                    if ($nv == $nhiemvu) {
+                                        chongbl('block');
+
+                                        $nv = "0";
+                                    }
+                                } else {
+                                    print "\r";
+                                }
+                            }
+                        }
+                        //nvsub
+                    }
+                }
+            }
+        }
+    }
+}
+
+function thongtin($id, $cookie, $useragent)
+{
+
+    $ch = curl_init();
+    $header = array(
+        "Host:m.facebook.com",
+        "user-agent:$useragent",
+        "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "cookie:$cookie",
+    );
+    $linkbv = 'https://m.facebook.com/' . $id . '/about';
+    curl_setopt($ch, CURLOPT_URL, $linkbv);
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    $head[] = "Accept-Language: en-us,en;q=0.5";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect
+    :'));
+    $page = curl_exec($ch);
+    $page1 = json_decode($page);
+    //echo "\n".$page."\n\n\n\n";
+
+    // $code_post = explode('<span>', $page)[2];
+    // $code_post = explode('</span>', $code_post)[0];
+    //   echo "\n\n".$code_post;
+    // $id_post = explode('mf_story_key":"', $code_post)[1];
+    // $id_post = explode('"', $id_post)[0];
+
+
+    // //tennguoidung
+    return $page;
+}
+
+function logintds()
+{
+    $data   = fread(fopen("TKMKTDS.txt", "r"), filesize("TKMKTDS.txt"));
+    $username = explode('|', $data)[0];
+    $password = explode('|', $data)[1];
+    $ch = curl_init();
+    //ketnoimangV1();
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_URL, 'https://traodoisub.com/scr/login.php');
+    curl_setopt($ch, CURLOPT_COOKIEJAR, "TDS.txt");
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Linux; Android 10; SM-J600G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36');
+    //ketnoimangV1();
+    $login = array('username' => $username, 'password' => $password, 'submit' => ' ÄÄƒng Nháº­p');
+    curl_setopt($ch, CURLOPT_POST, count($login));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $login);
+    curl_setopt($ch, CURLOPT_COOKIEFILE, "TDS.txt");
+    $source = curl_exec($ch);
+    curl_close($ch);
+}
+function group_fb($id, $useragent, $cookie)
+{
+    $ch = curl_init();
+    if (strpos($id, '_')) {
+        $uid = explode('_', $id, 2);
+        $id2 = 'story.php?story_fbid=' . $uid[1] . '&id=' . $uid[0];
+    } else {
+        $id2 = $id;
+    }
+
+    $header = array(
+        "Host:mbasic.facebook.com",
+        "user-agent:$useragent",
+        "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "cookie:$cookie",
+    );
+    //ketnoimangV1();
+    $linkbv = 'https://mbasic.facebook.com/groups/' . $id2;
+    curl_setopt($ch, CURLOPT_URL, $linkbv);
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    $head[] = "Accept-Language: en-us,en;q=0.5";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect
+                    :'));
+    // json_decode(curl_exec($ch), true);
+    $post = curl_exec($ch);
+
+
+    $link = explode('<form method="post" action="/a/group/join/?group_id=', $post)[1];
+    $link = explode('"', $link)[0];
+    $link = html_entity_decode($link);
+    $link = "https://mbasic.facebook.com/a/group/join/?group_id=" . $link;
+    // echo $link;
+    // die();
+    $linkreac1 = $link;
+    $header = array(
+        "Host:mbasic.facebook.com",
+        "user-agent:$useragent",
+        "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "referer:$linkbv",
+        "cookie:$cookie",
+    );
+    //ketnoimangV1();
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $linkreac1);
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    $head[] = "Accept-Language: en-us,en;q=0.5";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
+    $page = curl_exec($ch);
+    $aa = $page;
+
+    return $aa;
+}
+
+
+function follow($idtest, $cookie)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://mbasic.facebook.com/' . $idtest . '?_rdr');
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "upgrade-insecure-requests: 1";
+    // $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    // $head[] = "Accept-Language: en-us,en;q=0.5";
+    // $head[] = "Accept-encoding: gzip, deflate, br";
+    // $head[] = "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
+    $head[] = "sec-ch-ua-mobile: ?0";
+    $head[] = "sec-fetch-user: ?1";
+    $head[] = "sec-fetch-site: none";
+    $head[] = "sec-fetch-dest: document";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36');
+    //curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $head);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($ch, CURLOPT_REFERER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
+    $access = curl_exec($ch);
+    //return $access;
+    $url1 = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+    if (strpos($access, '/a/subscribe.php?') !== false) {
+        $haha = explode('<a href="', $access);
+        $haha2 = "";
+        //echo 1;
+        for ($v = 0; $v < count($haha); $v++) {
+            if (strpos($haha[$v], '/a/subscribe.php?') !== false) {
+                $haha2 = explode('" class=', $haha[$v])[0];
+                break;
+            }
+        }
+        //if()
+        $link2 = html_entity_decode($haha2);
+        // echo $url1;
+        curl_setopt($ch, CURLOPT_URL, 'https://mbasic.facebook.com' . $link2 . '&_rdr');
+        curl_setopt($ch, CURLOPT_REFERER, $url1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $head);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+        $fl = curl_exec($ch);
+        //echo curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+        curl_close($ch);
+        //return $fl;
+    } else {
+        curl_close($ch);
+        return 'id ' . $idtest . ' loi';
+        //return $access;
+    }
+}
+
+function like($access_token, $id, $cookie)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://graph.facebook.com/' . $id . '/likes');
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "authority: m.facebook.com";
+    $head[] = "ccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    $head[] = "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5";
+    $head[] = "cache-control: max-age=0";
+    $head[] = "upgrade-insecure-requests: 1";
+    $head[] = "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
+    $head[] = "sec-fetch-site: none";
+    $head[] = "sec-fetch-mode: navigate";
+    $head[] = "sec-fetch-user: ?1";
+    $head[] = "sec-fetch-dest: document";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36');
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $head);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
+    $data = array('access_token' => $access_token);
+    curl_setopt($ch, CURLOPT_POST, count($data));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    $access = curl_exec($ch);
+    curl_close($ch);
+    return json_decode($access);
+}
+function cmt($access_token, $id, $cookie, $msg)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://graph.facebook.com/' . $id . '/comments');
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "authority: m.facebook.com";
+    $head[] = "ccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    $head[] = "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5";
+    $head[] = "cache-control: max-age=0";
+    $head[] = "upgrade-insecure-requests: 1";
+    $head[] = "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
+    $head[] = "sec-fetch-site: none";
+    $head[] = "sec-fetch-mode: navigate";
+    $head[] = "sec-fetch-user: ?1";
+    $head[] = "sec-fetch-dest: document";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36');
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $head);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
+    $data = array('message' => $msg, 'access_token' => $access_token);
+    curl_setopt($ch, CURLOPT_POST, count($data));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    $access = curl_exec($ch);
+    curl_close($ch);
+    return json_decode($access);
+}
+function camxuc($id, $type, $cookie)
+{
+    $ch = curl_init();
+    if (strpos($id, '_')) {
+        $uid = explode('_', $id, 2);
+        $id2 = 'story.php?story_fbid=' . $uid[1] . '&id=' . $uid[0];
+    } else {
+        $id2 = $id;
+    }
+    curl_setopt($ch, CURLOPT_URL, 'https://mbasic.facebook.com/' . $id2);
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    $head[] = "Accept-Language: en-us,en;q=0.5";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $head);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect
+	:'));
+    $page = curl_exec($ch);
+    if ($id2 != $id && explode('&amp;origin_uri=', explode('amp;ft_id=', $page, 2)[1], 2)[0]) {
+        $get = explode('&amp;origin_uri=', explode('amp;ft_id=', $page, 2)[1], 2)[0];
+    } else {
+        $get = $id2;
+    }
+    $link = 'https://mbasic.facebook.com/reactions/picker/?is_permalink=1&ft_id=' . $get;
+    curl_setopt($ch, CURLOPT_URL, $link);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $cx = curl_exec($ch);
+    $haha = explode('<a href="', $cx);
+    if ($type == 'LIKE') {
+        $haha2 = explode('" style="display:block"', $haha[1])[0];
+    } elseif ($type == 'LOVE') {
+        $haha2 = explode('" style="display:block"', $haha[2])[0];
+    } elseif ($type == 'CARE') {
+        $haha2 = explode('" style="display:block"', $haha[3])[0];
+    } else if ($type == 'HAHA') {
+        $haha2 = explode('" style="display:block"', $haha[4])[0];
+    } else if ($type == 'WOW') {
+        $haha2 = explode('" style="display:block"', $haha[5])[0];
+    } else if ($type == 'SAD') {
+        $haha2 = explode('" style="display:block"', $haha[6])[0];
+    } elseif ($type == 'ANGRY') {
+        $haha2 = explode('" style="display:block"', $haha[7])[0];
+    }
+    $link2 = html_entity_decode($haha2);
+    curl_setopt($ch, CURLOPT_URL, 'https://mbasic.facebook.com' . $link2);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_exec($ch);
+    curl_close($ch);
+}
+
+function page($id, $cookie)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://mbasic.facebook.com/' . $id);
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    $head[] = "Accept-Language: en-us,en;q=0.5";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $head);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect
+	:'));
+    $page = curl_exec($ch);
+    if (explode('&amp;refid=', explode('pageSuggestionsOnLiking=1&amp;gfid=', $page)[1])[0]) {
+        $get = explode('&amp;refid=', explode('pageSuggestionsOnLiking=1&amp;gfid=', $page)[1])[0];
+        $link = 'https://mbasic.facebook.com/a/profile.php?fan&id=' . $id . '&origin=page_profile&pageSuggestionsOnLiking=1&gfid=' . $get . '&refid=17';
+        curl_setopt($ch, CURLOPT_URL, $link);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_exec($ch);
+    }
+    curl_close($ch);
+}
+
+function datnick($idfb)
+{
+    $data = "iddat=" . $idfb;
+    //ketnoimangV1();
+    $head = array(
+        "Host: traodoisub.com",
+        "content-length: " . strlen($data),
+        "accept: */*",
+        "x-requested-with: XMLHttpRequest",
+        "sec-ch-ua-mobile: ?1",
+        "save-data: on",
+        "user-agent: Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36",
+        "content-type: application/x-www-form-urlencoded; charset=UTF-8",
+        "origin: https://traodoisub.com",
+        "sec-fetch-site: same-origin",
+        "sec-fetch-mode: cors",
+        "sec-fetch-dest: empty",
+        "referer: https://traodoisub.com/view/cauhinh/"
+    );
+    //ketnoimangV1();
+    $ch   = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => 'https://traodoisub.com/scr/datnick.php',
+        CURLOPT_FOLLOWLOCATION => TRUE,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_POST => 1,
+        CURLOPT_POSTFIELDS => $data,
+        CURLOPT_SSL_VERIFYPEER => 0,
+        CURLOPT_COOKIEFILE => "TDS.txt",
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_ENCODING => TRUE
+    ));
+    //ketnoimangV1();
+    $a = curl_exec($ch);
+    curl_close($ch);
+    return $a;
+}
+
+
+
+function getnv($loai)
+{
+    $head = array(
+        "Host: traodoisub.com",
+        "save-data: on",
+        "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
+        "accept: */*",
+        "sec-fetch-site: same-origin",
+        "sec-fetch-mode: cors",
+        "sec-fetch-dest: empty",
+        "referer: https://traodoisub.com/ex/" . $loai . "/"
+    );
+    $ch   = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => 'https://traodoisub.com/ex/' . $loai . '/load.php',
+        CURLOPT_FOLLOWLOCATION => TRUE,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_POST => 1,
+        CURLOPT_HTTPGET => true,
+        CURLOPT_SSL_VERIFYPEER => 0,
+        CURLOPT_COOKIEFILE => "TDS.txt",
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_ENCODING => TRUE
+    ));
+    $a = curl_exec($ch);
+    curl_close($ch);
+    return $a;
+}
+function nhantien($tp, $loai, $id)
+{
+    $url  = "https://traodoisub.com/ex/" . $loai . "/nhantien.php";
+    $data = "id=" . $id . "&type=" . $tp;
+    $head = array(
+        "Host: traodoisub.com",
+        "content-length: " . strlen($data),
+        "accept: */*",
+        "origin: https://traodoisub.com",
+        "x-requested-with: XMLHttpRequest",
+        "user-agent: Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36",
+        "content-type: application/x-www-form-urlencoded; charset=UTF-8",
+        "referer: https://traodoisub.com/ex/" . $loai . "/"
+    );
+
+    $ch   = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => $url,
+        CURLOPT_FOLLOWLOCATION => TRUE,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_POST => 1,
+        CURLOPT_POSTFIELDS => $data,
+        CURLOPT_SSL_VERIFYPEER => 0,
+        CURLOPT_COOKIEFILE => "TDS.txt",
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_ENCODING => TRUE
+    ));
+    $a = curl_exec($ch);
+    curl_close($ch);
+    return $a;
+}
+function share($id, $cookie)
+{
+    $url  = "https://mbasic.facebook.com/" . $id . "";
+    $head = array(
+        "Host: mbasic.facebook.com",
+        "upgrade-insecure-requests: 1",
+        "save-data: on",
+        "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
+        "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*" . "/" . "*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "sec-fetch-site: same-origin",
+        "sec-fetch-mode: navigate",
+        "sec-fetch-user: ?1",
+        "sec-fetch-dest: document",
+        "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5"
+    );
+    $ch   = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => $url,
+        CURLOPT_FOLLOWLOCATION => false,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_POST => 1,
+        CURLOPT_HTTPGET => true,
+        CURLOPT_SSL_VERIFYPEER => 0,
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_HEADER => true,
+        CURLOPT_COOKIE => $cookie,
+        CURLOPT_ENCODING => TRUE
+    ));
+    $data = curl_exec($ch);
+    if (strpos($data, "xs=deleted") == true) {
+        print "\033[1;37m~\033[1;33m[\033[1;31mdie\033[1;33m] \033[1;37m=> \033[1;31mCookie Die !!!!\n";
+        exit();
+    }
+
+    $one = explode("location: ", $data);
+    $two = explode("rdr", $one[1]);
+    $url = $two[0] . "rdr";
+    if ($url == 'rdr') {
+    } else {
+        curl_setopt_array($ch, array(
+            CURLOPT_URL => $url,
+            CURLOPT_FOLLOWLOCATION => false,
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_POST => 1,
+            CURLOPT_HTTPGET => true,
+            CURLOPT_SSL_VERIFYPEER => 0,
+            CURLOPT_HTTPHEADER => $head,
+            CURLOPT_HEADER => true,
+            CURLOPT_ENCODING => TRUE
+        ));
+        $a = curl_exec($ch);
+        curl_close($ch);
+        $data            = explode('"', explode('<a href="/composer/mbasic/?c_src=share&amp;', $a)[1])[0];
+        $l1 = explode('amp;', $data)[0];
+        $l2 = explode('amp;', $data)[1];
+        $l3 = explode('amp;', $data)[2];
+        $l4 = explode('amp;', $data)[3];
+        $l5 = explode('amp;', $data)[4];
+        $l6 = explode('amp;', $data)[5];
+        $l7 = explode('amp;', $data)[6];
+        $l8 = explode('amp;', $data)[7];
+        $l9 = explode('amp;', $data)[8];
+        $l10 = explode('amp;', $data)[9];
+        $l11 = explode('amp;', $data)[10];
+        $link = "https://mbasic.facebook.com/composer/mbasic/?c_src=share&" . $l1 . "" . $l2 . "" . $l3 . "" . $l4 . "" . $l5 . "" . $l6 . "" . $l7 . "" . $l8 . "" . $l9 . "" . $l10 . "" . $l11 . "";
+    }
+    #begin
+    $head = array(
+        "Host: mbasic.facebook.com",
+        "cache-control: max-age=0",
+        "save-data: on",
+        "upgrade-insecure-requests: 1",
+        "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
+        "referer: https://mbasic.facebook.com/home.php",
+        "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "sec-fetch-site: none",
+        "sec-fetch-mode: navigate",
+        "sec-fetch-user: ?1",
+        "sec-fetch-dest: document"
+    );
+    $ch   = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => $link,
+        CURLOPT_FOLLOWLOCATION => TRUE,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_POST => 1,
+        CURLOPT_HTTPGET => true,
+        CURLOPT_SSL_VERIFYPEER => 0,
+        CURLOPT_COOKIE => $cookie,
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_ENCODING => TRUE
+    ));
+    $data = curl_exec($ch);
+    curl_close($ch);
+    $a            = explode('" id="composer_form"', explode('<form method="post" action="', $data)[1])[0];
+    $a1 = explode('amp;', $a)[0];
+    $a2 = explode('amp;', $a)[1];
+    $a3 = explode('amp;', $a)[2];
+    $a4 = explode('amp;', $a)[3];
+    $link2 = "https://mbasic.facebook.com" . $a1 . "" . $a2 . "" . $a3 . "" . $a4 . "&ref=dbl";
+    $fb_dtsg            = explode('" autocomplete="off"', explode('name="fb_dtsg" value="', $data)[1])[0];
+    $jazoest            = explode('" autocomplete="off"', explode('name="jazoest" value="', $data)[1])[0];
+    $target            = explode('"', explode('name="target" value="', $data)[1])[0];
+    $csid            = explode('"', explode('name="csid" value="', $data)[1])[0];
+    $privacyx            = explode('"', explode('name="privacyx" value="', $data)[1])[0];
+    $cver            = explode('"', explode('name="cver" value="', $data)[1])[0];
+    $m            = explode('"', explode('name="m" value="', $data)[1])[0];
+    $shared_from_post_id            = explode('"', explode('name="shared_from_post_id" value="', $data)[1])[0];
+    $cscr            = explode('"', explode('name="c_src" value="', $data)[1])[0];
+    $referrer            = explode('"', explode('name="referrer" value="', $data)[1])[0];
+    $ctype            = explode('"', explode('name="ctype" value="', $data)[1])[0];
+    $sid            = explode('"', explode('name="sid" value="', $data)[1])[0];
+    $waterfall_source            = explode('"', explode('name="waterfall_source" value="', $data)[1])[0];
+    #break;
+    date_default_timezone_set('Asia/Ho_Chi_Minh');
+    $t = date('d-m-Y | H:i:s');
+    //$data = "comment=King Of Aov&m=oneclick&privacyx=" . $privacyx . "&sid=" . $sid . "&shareID=" . $sid . "&fs=1&fr=null&internal_preview_image_id=null&should_share_post=false&direct=true&_ft_=" . $l11 . "&fb_dtsg=" . $fb_dtsg . "&jazoest=" . $jazoest . "__dyn=1KQEGiFo525Ujwh8-F42mml3onxG6UO3m2i5UfXwNwTwKwSwMxWUW16wZxm6Uhx6485-0SUhxm3O0AE8o11E52q3q5U2nweS787S78K1Jwt8-0lm68WUS2F0EU6i12wm8qwk888C0NEeo5Wq3q0H8-7E2swp82vwAwmE2ewnE2Lw5dw&__csr=&__req=7&__a=AYmQRaSRpckx8Ugg8YkSOfYUUczZWHGSt_e3GRCVZ-yzwoxI0JMFbt_4bf2bG-XPk4FOLrTs5QEGOofdlpo6f5hUReNVHgYej0SSg1hYsLZoMQ&__user=" . $target . "";
+    $data = "comment=&m=oneclick&privacyx=" . $privacyx . "&sid=" . $sid . "&shareID=" . $sid . "&fs=1&fr=null&internal_preview_image_id=null&should_share_post=false&direct=true&_ft_=" . $l11 . "&fb_dtsg=" . $fb_dtsg . "&jazoest=" . $jazoest . "__dyn=1KQEGiFo525Ujwh8-F42mml3onxG6UO3m2i5UfXwNwTwKwSwMxWUW16wZxm6Uhx6485-0SUhxm3O0AE8o11E52q3q5U2nweS787S78K1Jwt8-0lm68WUS2F0EU6i12wm8qwk888C0NEeo5Wq3q0H8-7E2swp82vwAwmE2ewnE2Lw5dw&__csr=&__req=7&__a=AYmQRaSRpckx8Ugg8YkSOfYUUczZWHGSt_e3GRCVZ-yzwoxI0JMFbt_4bf2bG-XPk4FOLrTs5QEGOofdlpo6f5hUReNVHgYej0SSg1hYsLZoMQ&__user=" . $target . "";
+    $header = array(
+        "Host: m.facebook.com",
+        "content-length: " . strlen($data),
+        "origin: https://m.facebook.com",
+        "x-requested-with: XMLHttpRequest",
+        "user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36",
+        "x-response-format: JSONStream",
+        "content-type: application/x-www-form-urlencoded",
+        "accept: */*",
+        "referer: https://m.facebook.com/"
+    );
+    $ch   = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => 'https://m.facebook.com/a/sharer.php',
+        CURLOPT_FOLLOWLOCATION => TRUE,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_POST => 1,
+        CURLOPT_POSTFIELDS => $data,
+        CURLOPT_SSL_VERIFYPEER => 0,
+        CURLOPT_COOKIE => $cookie,
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_ENCODING => TRUE
+    ));
+    $data = curl_exec($ch);
+    curl_close($ch);
+}
+
+function group($id, $cookie)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://stoolnopro.com/admin/api/group.php?id=' . $id . '&cookie=' . $cookie);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+    $headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36';
+    $headers[] = 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9';
+    $headers[] = 'Accept-Language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5';
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+    $send = json_decode(curl_exec($ch), true);
+    curl_close($ch);
+    return $send;
+}
+
+function joingroup($id, $cookie)
+{
+    $url  = "https://mbasic.facebook.com/groups/" . $id . "";
+    $head = array(
+        "Host: mbasic.facebook.com",
+        "upgrade-insecure-requests: 1",
+        "save-data: on",
+        "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
+        "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*" . "/" . "*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "sec-fetch-site: same-origin",
+        "sec-fetch-mode: navigate",
+        "sec-fetch-user: ?1",
+        "sec-fetch-dest: document",
+        "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5"
+    );
+    $ch   = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => $url,
+        CURLOPT_FOLLOWLOCATION => false,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_POST => 1,
+        CURLOPT_HTTPGET => true,
+        CURLOPT_SSL_VERIFYPEER => 0,
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_HEADER => true,
+        CURLOPT_COOKIE => $cookie,
+        CURLOPT_ENCODING => TRUE
+    ));
+    $a = curl_exec($ch);
+    if (strpos($a, "xs=deleted") == true) {
+        print "\033[1;31m Cookie Die\n";
+        exit();
+    }
+    $data            = explode('"', explode('/a/group/join/', $a)[1])[0];
+    $l1 = explode('amp;', $data)[0];
+    $l2 = explode('amp;', $data)[1];
+    $l3 = explode('amp;', $data)[2];
+    $fb_dtsg            = explode('" autocomplete="off"', explode('name="fb_dtsg" value="', $a)[1])[0];
+    $jazoest            = explode('" autocomplete="off"', explode('name="jazoest" value="', $a)[1])[0];
+
+    $link = "https://mbasic.facebook.com/a/group/join/" . $l1 . "" . $l2 . "" . $l3 . "";
+    if ($link == 'https://mbasic.facebook.com/a/group/join/') {
+    } else {
+        $data = "fb_dtsg=" . $fb_dtsg . "&jazoest=" . $jazoest . "";
+        $header = array(
+            "Host: mbasic.facebook.com",
+            "content-length: " . strlen($data),
+            "cache-control: max-age=0",
+            "origin: https://mbasic.facebook.com",
+            "upgrade-insecure-requests: 1",
+            "content-type: application/x-www-form-urlencoded",
+            "user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36",
+            "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+            "referer: " . $url . ""
+        );
+        $ch   = curl_init();
+        curl_setopt_array($ch, array(
+            CURLOPT_URL => $link,
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_POST => 1,
+            CURLOPT_POSTFIELDS => $data,
+            CURLOPT_SSL_VERIFYPEER => 0,
+            CURLOPT_COOKIE => $cookie,
+            CURLOPT_HTTPHEADER => $header,
+            CURLOPT_ENCODING => TRUE,
+            CURLOPT_FOLLOWLOCATION => true
+        ));
+        $cc = curl_exec($ch);
+        $location = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+        curl_close($ch);
+    }
+    return $location;
+}
+
+function reaction_cmt($id, $idfb, $type, $cookie)
+{
+    $url  = "https://mbasic.facebook.com/" . $id . "";
+    $head = array(
+        "Host: mbasic.facebook.com",
+        "upgrade-insecure-requests: 1",
+        "save-data: on",
+        "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
+        "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*" . "/" . "*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "sec-fetch-site: same-origin",
+        "sec-fetch-mode: navigate",
+        "sec-fetch-user: ?1",
+        "sec-fetch-dest: document",
+        "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5"
+    );
+    $ch   = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => $url,
+        CURLOPT_FOLLOWLOCATION => false,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_POST => 1,
+        CURLOPT_HTTPGET => true,
+        CURLOPT_SSL_VERIFYPEER => 0,
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_HEADER => true,
+        CURLOPT_COOKIE => $cookie,
+        CURLOPT_ENCODING => TRUE
+    ));
+    $data = curl_exec($ch);
+    $one = explode("location: ", $data);
+    $two = explode("rdr", $one[1]);
+    $url = $two[0] . "rdr";
+    if ($url == 'rdr') {
+    } else {
+        $idpost = explode('&id=', $url)[0];
+        $idvictim = explode('&id=', $url)[1];
+        curl_close($ch);
+        if (strpos($data, "xs=deleted") == true) {
+            //print "\033[1;37mâ†’\033[1;31m Die Cookie !!!\n";
+            //exit();
+        }
+        $head = array(
+            "Host: mbasic.facebook.com",
+            "cache-control: max-age=0",
+            "sec-ch-ua-mobile: ?1",
+            "save-data: on",
+            "upgrade-insecure-requests: 1",
+            "user-agent: Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36",
+            "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+            "sec-fetch-site: none",
+            "sec-fetch-mode: navigate",
+            "sec-fetch-user: ?1",
+            "sec-fetch-dest: document"
+        );
+        $ch   = curl_init();
+        curl_setopt_array($ch, array(
+            CURLOPT_URL => 'https://mbasic.facebook.com/reactions/picker/?ft_id=' . $id . '&origin_uri=https://mbasic.facebook.com/' . $idvictim . '/posts/' . $idpost . '/?app=fbl&fbt_id=' . $id . '&lul&av=' . $idfb . '&__tn__=R',
+            CURLOPT_FOLLOWLOCATION => false,
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_POST => 1,
+            CURLOPT_HTTPGET => true,
+            CURLOPT_SSL_VERIFYPEER => 0,
+            CURLOPT_HTTPHEADER => $head,
+            CURLOPT_HEADER => true,
+            CURLOPT_COOKIE => $cookie,
+            CURLOPT_ENCODING => TRUE
+        ));
+        $cx = curl_exec($ch);
+        $haha = explode('<a href="', $cx);
+        if ($type == 'LOVE') {
+            $haha2 = explode('" style="display:block"', $haha[2])[0];
+        } else if ($type == 'CARE') {
+            $haha2 = explode('" style="display:block"', $haha[3])[0];
+        } else if ($type == 'HAHA') {
+            $haha2 = explode('" style="display:block"', $haha[4])[0];
+        } else if ($type == 'WOW') {
+            $haha2 = explode('" style="display:block"', $haha[5])[0];
+        } else if ($type == 'SAD') {
+            $haha2 = explode('" style="display:block"', $haha[6])[0];
+        } else {
+            $haha2 = explode('" style="display:block"', $haha[7])[0];
+        }
+        if ($type == 'LIKE') {
+            $data            = explode('"', explode('<a href="/ufi/reaction/?ft_ent_identifier=', $cx)[1])[0];
+            curl_setopt($ch, CURLOPT_URL, 'https://mbasic.facebook.com/ufi/reaction/?ft_ent_identifier=' . htmlspecialchars_decode($data));
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_exec($ch);
+            curl_close($ch);
+        } else {
+            $link2 = html_entity_decode($haha2);
+            curl_setopt($ch, CURLOPT_URL, 'https://mbasic.facebook.com' . $link2);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            $x = curl_exec($ch);
+            $location = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+            curl_close($ch);
+        }
+    }
+    return $location;
+}
+function loadtime($loai)
+{
+    $so = 0;
+    $delay = $_SESSION['' . $loai . '']  * 15;
+    for ($x = 0; $x < $delay; $x++) {
+        if ($x % 15 == 0) {
+            $so++;
+        }       
+        global $mau19;
+        global $mau18;
+        global $mau17;
+        global $mau16;
+        global $mau15;
+        global $mau14;
+        global $mau13;
+        global $mau12;
+        global $mau11;
+        global $mau10;
+        global $mau9;
+        global $mau8;
+        global $mau7;
+        global $mau6;
+        global $mau5;
+        global $mau4;
+        global $mau3;
+        global $mau2;
+        global $mau1;
+        $maurand = "\033[1;3" . rand(1, 7) . "m";
+        $mau19 = $mau18;
+        $mau18 = $mau17;
+        $mau17 = $mau16;
+        $mau16 = $mau15;
+        $mau15 = $mau14;
+        $mau14 = $mau13;
+        $mau13 = $mau12;
+        $mau12 = $mau11;
+        $mau11 = $mau10;
+        $mau10 = $mau9;
+        $mau9  =  $mau8;
+        $mau8  =  $mau7;
+        $mau7  =  $mau6;
+        $mau6  =  $mau5;
+        $mau5  =  $mau4;
+        $mau4  =  $mau3;
+        $mau3  =  $mau2;
+        $mau2  =  $mau1;
+        $mau1  =  $maurand;
+        echo "\r                   \r";
+        echo "\r\e[1;95m    ðŸ‰" .$mau20."S". $mau19 . "y" . $mau18 . "n" . $mau17 . "e" . $mau16 . "l" . $mau15 . "d" . $mau14 . "ðŸ‰       T" . $mau10 . "D" . $mau9 . "S" . $mau8 . "-" . $mau7 . "C" . $mau6 . "K" . $mau5 . " <" . $mau4 . " <" . $mau3 . " | " . $mau2 . "$so" . $mau1 . " |           \r";
+        usleep(13000);
+        echo "\r                   \r";
+        echo "\r\e[1;95m    ðŸ‰" .$mau20."S". $mau19 . "y" . $mau18 . "n" . $mau17 . "e" . $mau16 . "l" . $mau15 . "d" . $mau14 . "ðŸ‰       T" . $mau10 . "D" . $mau9 . "S" . $mau8 . "-" . $mau7 . "C" . $mau6 . "K" . $mau5 . " <" . $mau4 . " <" . $mau3 . " | " . $mau2 . "$so" . $mau1 . " |           \r";
+        usleep(13500);
+        echo "\r                   \r";
+        echo "\r\e[1;95m    ðŸ‰" .$mau20."S". $mau19 . "y" . $mau18 . "n" . $mau17 . "e" . $mau16 . "l" . $mau15 . "d" . $mau14 . "ðŸ‰       T" . $mau10 . "D" . $mau9 . "S" . $mau8 . "-" . $mau7 . "C" . $mau6 . "K" . $mau5 . " <" . $mau4 . " <" . $mau3 . " | " . $mau2 . "$so" . $mau1 . " |           \r";
+        usleep(13000);
+        echo "\r                   \r";
+        echo "\r\e[1;95m    ðŸ‰" .$mau20."S". $mau19 . "y" . $mau18 . "n" . $mau17 . "e" . $mau16 . "l" . $mau15 . "d" . $mau14 . "ðŸ‰       T" . $mau10 . "D" . $mau9 . "S" . $mau8 . "-" . $mau7 . "C" . $mau6 . "K" . $mau5 . " <" . $mau4 . " <" . $mau3 . " | " . $mau2 . "$so" . $mau1 . " |           \r";
+        usleep(13500);
+        echo "\r                   \r";
+        echo "\r\e[1;95m    ðŸ‰" .$mau20."S". $mau19 . "y" . $mau18 . "n" . $mau17 . "e" . $mau16 . "l" . $mau15 . "d" . $mau14 . "ðŸ‰       T" . $mau10 . "D" . $mau9 . "S" . $mau8 . "-" . $mau7 . "C" . $mau6 . "K" . $mau5 . " <" . $mau4 . " <" . $mau3 . " | " . $mau2 . "$so" . $mau1 . " |           \r";
+        usleep(13000);
+        echo "\r";
+        echo " \r";
+    }
+    echo "\r\e[1;95m    ðŸ‰SyneldðŸ‰    TDS Cookie ÄA LUá»’NG                  \r";
+    if (!file_exists('Run_tool.txt')) {
+        echo "\râ€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿â€¿\n";
+        echo "Táº¡m dá»«ng - enter Ä‘á»ƒ cháº¡y tiáº¿p hoáº·c nháº­p 1 Ä‘á»ƒ thÃªm Cookie:";
+        $js = trim(fgets(STDIN));
+        //$js = $codeao;
+        $k = fopen("Run_tool.txt", "w+");
+        fwrite($k, $js);
+        fclose($k);
+        if ($js == '1') {
+            echo "\033[0;32m Nháº­p Cookie Facebook Dá»«ng ThÃ¬\033[0;37m Enter\n";
+            unlink("File_cookie_FB.txt");
+            for ($a = 1; $a < 999999; $a++) {
+                echo "\033[0;32m Nháº­p Cookie Thá»©\033[0;37m $a: \033[0;33m";
+                $nhapck = (string)trim(fgets(STDIN));
+                if ($nhapck == '') {
+                    break;
+                }
+                array_push($khoToken, $nhapck);
+            }
+            $js = json_encode($khoToken);
+            $k = fopen("File_cookie_FB.txt", "a+");
+            fwrite($k, $js);
+            fclose($k);
+        }
+    }
+}
+function chongbl($loai)
+{
+    for ($x = $_SESSION['' . $loai . '']; $x--; $x) {
+        print "\033[1;30mÄang Cháº¡y Cháº¿ Äá»™ Chá»‘ng Block Vui LÃ²ng Äá»£i \033[1;31m| \033[1;33m$x \033[1;31m|\033[1;30m GiÃ¢y";
+        sleep(1);
+        print "\r                                          \r";
+    }
+}
+function gettoken($cookie, $useragent)
+{
+    $head = array("Connection: keep-alive", "Keep-Alive: 300", "authority: business.facebook.com", "ccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7", "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5", "cache-control: max-age=0", "upgrade-insecure-requests: 1", "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", "sec-fetch-site: none", "sec-fetch-mode: navigate", "sec-fetch-user: ?1", "sec-fetch-dest: document");
+    $ch = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => "https://business.facebook.com/business_locations",
+        CURLOPT_USERAGENT => $useragent,
+        CURLOPT_COOKIE => $cookie,
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_SSL_VERIFYPEER => FALSE,
+        CURLOPT_TIMEOUT => 60,
+        CURLOPT_CONNECTTIMEOUT => 60,
+        CURLOPT_FOLLOWLOCATION => TRUE
+    ));
+    $access = curl_exec($ch);
+    curl_close($ch);
+    $access_token = 'EAAG' . explode('","', explode('EAAG', $access)[1])[0];
+    if (strlen($access_token) > 5) {
+        return $access_token;
+    } else {
+        return 'die';
+    }
+}
+function    getxu()
+{
+    $url = "https://traodoisub.com/scr/user.php";
+    $head = array(
+        "Host: traodoisub.com",
+        "accept: application/json, text/javascript, */*; q=0.01",
+        "x-requested-with: XMLHttpRequest",
+        "save-data: on",
+        "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
+        "sec-fetch-site: same-origin",
+        "sec-fetch-mode: cors",
+        "sec-fetch-dest: empty",
+        "referer: https://traodoisub.com/home/"
+    );
+    $ch   = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => $url,
+        CURLOPT_FOLLOWLOCATION => TRUE,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_POST => 1,
+        CURLOPT_HTTPGET => true,
+        CURLOPT_SSL_VERIFYPEER => 0,
+        CURLOPT_COOKIEFILE => "TDS.txt",
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_ENCODING => TRUE
+    ));
+    $data = curl_exec($ch);
+    curl_close($ch);
+    $json = json_decode($data, true);
+    $sodu = $json["xu"];
+    return $sodu;
+}
+
+function huyfollow($id, $useragent, $cookie)
+{
+    $ch = curl_init();
+    if (strpos($id, '_')) {
+        $uid = explode('_', $id, 2);
+        $id2 = 'story.php?story_fbid=' . $uid[1] . '&id=' . $uid[0];
+    } else {
+        $id2 = $id;
+    }
+
+    $header = array(
+        "Host:mbasic.facebook.com",
+        "user-agent:$useragent",
+        "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "cookie:$cookie",
+    );
+    //ketnoimangV1();
+    $linkbv = 'https://mbasic.facebook.com/' . $id2;
+    curl_setopt($ch, CURLOPT_URL, $linkbv);
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    $head[] = "Accept-Language: en-us,en;q=0.5";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect
+                    :'));
+    // json_decode(curl_exec($ch), true);
+    $post = curl_exec($ch);
+
+
+    $link = explode('<a href="/a/subscriptions/remove?subject_id=', $post)[1];
+    $link = explode('"', $link)[0];
+    $link = html_entity_decode($link);
+    $link = "https://mbasic.facebook.com/a/subscriptions/remove?subject_id=" . $link;
+    // echo $link;
+    // die();
+    $linkreac1 = $link;
+    $header = array(
+        "Host:mbasic.facebook.com",
+        "user-agent:$useragent",
+        "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "referer:$linkbv",
+        "cookie:$cookie",
+    );
+    //ketnoimangV1();
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $linkreac1);
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    $head[] = "Accept-Language: en-us,en;q=0.5";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
+    $page = curl_exec($ch);
+    $aa = $page;
+
+    return $aa;
+}
+//user
+$userV1 = "KOV";
+$key_word = "https://kingofaov.tk/NnsSyL6p8g4fSRUN7LaJNzRCqsGMn7Mdft4F4XM875w7eMRR425GAvTqFbTfn3djtggYNpQX5SktM/";
+
+
+//Ä‘á»£i máº¡ng
+function ketnoimangV1(){
+    $knod = 0;
+    $connect = 'false';
+
+    while($connect == 'false'){
+        $knod++;
+        $aa = file_get_contents('https://tranthuongtv.name.vn/connect_ketnoimang');
+        if($aa != ''){
+        $connect = 'true';
+        }
+        if($knod == 3){
+            $knod++;
+            echo"\r";
+            echo"\r                                         \r";
+        echo "\033[1;31m káº¿t ná»‘i cá»§a báº¡n táº¡m thá»i khÃ´ng á»•n Ä‘á»‹n \r";
+        
+        }
+    }
+
+}
+
+$_SESSION['useragent'] = 'Mozilla/5.0 (Linux; Android 8.1.0; SM-G610F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36';
+$useragent = 'Mozilla/5.0 (Linux; Android 8.1.0; SM-G610F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36';
+
+
+function namefb ($cookie){
+	$ch = curl_init();
+	$head= array("Connection: keep-alive","Keep-Alive: 300","authority: m.facebook.com","ccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7","accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5","cache-control: max-age=0","upgrade-insecure-requests: 1","accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","sec-fetch-site: none","sec-fetch-mode: navigate","sec-fetch-user: ?1","sec-fetch-dest: document");
+	$ch=curl_init();
+	curl_setopt_array($ch , array(
+		CURLOPT_URL => 'https://mbasic.facebook.com/profile.php',
+		CURLOPT_TIMEOUT => 60,
+		CURLOPT_RETURNTRANSFER => 1,
+		CURLOPT_CONNECTTIMEOUT => 60,
+		CURLOPT_USERAGENT => $_SESSION['useragent'],
+		CURLOPT_COOKIE => $cookie,
+		CURLOPT_SSL_VERIFYPEER => TRUE,
+		CURLOPT_HTTPHEADER => $head
+	));
+	$access = curl_exec($ch);
+	if(strpos ($access, 'ÄÄƒng nháº­p') !== false){
+		return 'die';
+	} else {
+		$name = explode ('</title>', explode ('xhtml"><head><title>', $access)[1])[0];
+		return $name;
+	}
+}
+
+
+function lay_token_moi($cookie)
+{
+    $useragent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36';
+    $head = array("Connection: keep-alive", "Keep-Alive: 300", "authority: business.facebook.com", "ccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7", "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5", "cache-control: max-age=0", "upgrade-insecure-requests: 1", "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", "sec-fetch-site: none", "sec-fetch-mode: navigate", "sec-fetch-user: ?1", "sec-fetch-dest: document");
+    $ch = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL => "https://business.facebook.com/business_locations",
+        CURLOPT_USERAGENT => $useragent,
+        CURLOPT_COOKIE => $cookie,
+        CURLOPT_HTTPHEADER => $head,
+        CURLOPT_RETURNTRANSFER => 1,
+        CURLOPT_SSL_VERIFYPEER => FALSE,
+        CURLOPT_TIMEOUT => 60,
+        CURLOPT_CONNECTTIMEOUT => 60,
+        CURLOPT_FOLLOWLOCATION => TRUE
+    ));
+    $access = curl_exec($ch);
+    curl_close($ch);
+    $access_token = 'EAAG' . explode('","', explode('EAAG', $access)[1])[0];
+    if (strlen($access_token) > 5) {
+        return $access_token;
+    } else {
+        return 'die';
+    }
+}
+
+function lay_token_moi_v1($cookie)
+{
+    $useragent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36';
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://www.facebook.com/adsmanager/manage/campaigns');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+
+    curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+
+    $headers = array();
+    $headers[] = 'Authority: business.facebook.com';
+    $headers[] = 'Cache-Control: max-age=0';
+    $headers[] = 'Sec-Ch-Ua: \"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"';
+    $headers[] = 'Sec-Ch-Ua-Mobile: ?0';
+    $headers[] = 'Sec-Ch-Ua-Platform: \"Windows\"';
+    $headers[] = 'Upgrade-Insecure-Requests: 1';
+    $headers[] = 'User-Agent: ' . $useragent;
+    $headers[] = 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9';
+    $headers[] = 'Sec-Fetch-Site: same-origin';
+    $headers[] = 'Sec-Fetch-Mode: navigate';
+    $headers[] = 'Sec-Fetch-User: ?1';
+    $headers[] = 'Sec-Fetch-Dest: document';
+    $headers[] = 'Accept-Language: en-US,en;q=0.9';
+    $headers[] = 'Cookie: ' . $cookie;
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+    $access = curl_exec($ch);
+    if (curl_errno($ch)) {
+        return 'die';
+    }
+    curl_close($ch);
+    $link = explode('&nav_source', explode('campaigns?act=', $access) [1]) [0];
+    curl_setopt($ch, CURLOPT_URL, 'https://www.facebook.com/adsmanager/manage/campaigns?act='.$link.'&nav_source=no_referrer');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+    curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    $access1 = curl_exec($ch);
+    $access_token = explode('";', explode('accessToken="', $access1) [1]) [0];
+    if ($access_token != '') {
+        return $access_token;
+    }else{
+        return 'die';
+    }
+}
+
+function get_id_luot_fb($cookie){
+    $ch = curl_init();
+    $header = array(
+        "Host:mbasic.facebook.com",
+        "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.136 Safari/537.36",
+        "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "cookie:$cookie",
+    );
+    $linkbv = 'https://mbasic.facebook.com/';
+    curl_setopt($ch, CURLOPT_URL, $linkbv);
+    $head[] = "Connection: keep-alive";
+    $head[] = "Keep-Alive: 300";
+    $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+    $head[] = "Accept-Language: en-us,en;q=0.5";
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
+    curl_setopt($ch, CURLOPT_ENCODING, '');
+    curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect
+    :'));
+    $page = curl_exec($ch);
+    $id = explode('"',explode("like_",$page)[1])[0];
+    return $id;
+}
+
+function cmt_fb_cookie_new($id,$cookie,$msg){
+$mr = curl_init();
+$head = [
+	"Host:mbasic.facebook.com",
+	'sec-ch-ua:"Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"',
+	"sec-ch-ua-mobile:?1",
+	"cache-control:max-age=0",
+	"upgrade-insecure-requests:1",
+	"dnt:1",
+	"save-data:on",
+	"user-agent:Mozilla/5.0 (Linux; Android 8.1.0; SM-G610F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36",
+	"accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+	"sec-fetch-site:same-origin",
+	"sec-fetch-mode:navigate",
+	"sec-fetch-user:?1",
+	"sec-fetch-dest:document",
+	"referer:https://mbasic.facebook.com/",
+	"accept-language:vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5",];
+curl_setopt($mr, CURLOPT_URL, "https://mbasic.facebook.com/$id");
+curl_setopt($mr, CURLOPT_COOKIE, $cookie);
+curl_setopt($mr, CURLOPT_HTTPHEADER, $head);
+curl_setopt($mr, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($mr, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($mr, CURLOPT_SSL_VERIFYPEER, FALSE);
+curl_setopt($mr, CURLOPT_FOLLOWLOCATION, TRUE);
+$mr2 = curl_exec($mr);
+$fb_dtsg = explode('"',explode('fb_dtsg" value="',$mr2)[1])[0];
+$jazoest = explode('"',explode('jazoest" value="',$mr2)[1])[0];
+$cmt = explode('"',explode('action="/a/comment.php?',$mr2)[1])[0];
+$text = "fb_dtsg=".$fb_dtsg."&jazoest=".$jazoest."&comment_text=".$msg;
+curl_setopt($mr, CURLOPT_URL, "https://mbasic.facebook.com/a/comment.php?".htmlspecialchars_decode($cmt));
+curl_setopt($mr, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($mr, CURLOPT_POSTFIELDS, $text);
+$mr2 = curl_exec($mr);
+curl_close($mr);
+}
+
+function logo_kov(){
+$logo= "\033[1;37m                          
+\033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—     â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—
+\033[1;37mâ–ˆâ–ˆâ•”â•â•â•â•â•â•šâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•”â•â–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•â•â•â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—
+\033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•”â• â–ˆâ–ˆâ•”â–ˆâ–ˆâ•— â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘
+\033[1;37mâ•šâ•â•â•â•â–ˆâ–ˆâ•‘  â•šâ–ˆâ–ˆâ•”â•  â–ˆâ–ˆâ•‘â•šâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•  â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘
+\033[1;32mâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘ â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•
+\033[1;37mâ•šâ•â•â•â•â•â•â•   â•šâ•â•   â•šâ•â•  â•šâ•â•â•â•â•šâ•â•â•â•â•â•â•â•šâ•â•â•â•â•â•â•â•šâ•â•â•â•â•â•
+\n";           
+
+return $logo;
+}
